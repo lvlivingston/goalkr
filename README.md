@@ -1,6 +1,7 @@
 # Project 2 - GOAL-KR
 
-Created by Leah Livingston
+**🎯 Hit your mark. Achieve success!**
+A web application created by Leah Livingston
 
 
 
@@ -18,7 +19,6 @@ OKRs, short for objectives and key results, is a proven goal-setting tool that k
 *Focus: Laser-focus on what truly matters to you (and future you)
 *Motivation: Experience the thrill of accomplishment as you move closer to your dreams, one milestone at a time.
 
-**🎯 Hit your mark. Achieve success!**
 
 ###### Is this right for me?
 *Are you longing to buy a house but struggle to save that initial deposit?
