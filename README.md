@@ -21,10 +21,9 @@ OKR, short for [objectives and key results](https://www.forbes.com/advisor/busin
 
 
 ###### Is this right for me?
-*Are you longing to buy a house but struggle to save that initial deposit?
-*Do you dream of a healthier lifestyle but find yourself ordering takeout more often than hitting the gym?
-*Have you always wanted to write a book but can't find time in your hectic schedule?
-
+* Are you longing to buy a house but struggle to save that initial deposit?
+* Do you dream of a healthier lifestyle but find yourself ordering takeout more often than hitting the gym?
+* Have you always wanted to write a book but can't find time in your hectic schedule?
 
 You're not alone! Life happens, and that's why OKRs are the secret weapon used by successful organizations across the globe.
 
