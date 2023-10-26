@@ -1,23 +1,23 @@
 # Project 2 - GOAL-KR
 
 **🎯 Hit your mark. Achieve success!**
+
 A web application created by Leah Livingston
 
 
 
 ---
 ### **Project Idea and Description**
-
 Ever dream of achieving your personal goals with the same precision and focus as the Fortune 100 companies? Look no further. This project brings the power of OKRs to your fingertips. 
 
 ###### What's an OKR?
-OKRs, short for objectives and key results, is a proven goal-setting tool that keeps you accountable, tracks your progress, and helps to achieve milestones that might seem "just out of reach". Imagine setting a BHAG goal, aligning it with your deepest desire, and having a clear roadmap to success!
+OKR, short for [objectives and key results](https://www.forbes.com/advisor/business/what-is-an-okr-definition-examples/), is a proven goal-setting tool that keeps you accountable, tracks your progress, and helps to achieve milestones that might seem "just out of reach". Imagine setting a [BHAG goal](https://asana.com/resources/bhag-big-hairy-audacious-goal), aligning it with your deepest desire, and having a clear roadmap to success!
 
 
 ###### Why do I need this?
-*Accountability: Stay on course, achieve your dreams, and watch your progress
-*Focus: Laser-focus on what truly matters to you (and future you)
-*Motivation: Experience the thrill of accomplishment as you move closer to your dreams, one milestone at a time.
+* **Accountability**: Stay on course, achieve your dreams, and watch your progress
+* **Focus**: Laser-focus on what truly matters to you (and future you)
+* **Motivation**: Experience the thrill of accomplishment as you move closer to your dreams, one milestone at a time.
 
 
 ###### Is this right for me?
