@@ -11,7 +11,7 @@ A web application created by Leah Livingston
 Ever dream of achieving your personal goals with the same precision and focus as the Fortune 100 companies? Look no further. This project brings the power of OKRs to your fingertips. 
 
 ###### What's an OKR?
-OKR, short for [objectives and key results](https://www.forbes.com/advisor/business/what-is-an-okr-definition-examples/), is a proven goal-setting tool that keeps you accountable, tracks your progress, and helps to achieve milestones that might seem "just out of reach". Imagine setting a [BHAG goal](https://asana.com/resources/bhag-big-hairy-audacious-goal), aligning it with your deepest desire, and having a clear roadmap to success!
+OKR, short for [objectives and key results](https://www.forbes.com/advisor/business/what-is-an-okr-definition-examples/), is a proven goal-setting tool that holds accountability, tracks progress, and helps to achieve milestones that might seem "just out of reach". Imagine setting a [BHAG goal](https://asana.com/resources/bhag-big-hairy-audacious-goal), aligning it with your deepest desire, and having a clear roadmap to success!
 
 
 ###### Why do I need this?
