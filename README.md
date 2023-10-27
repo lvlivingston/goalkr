@@ -49,7 +49,8 @@ It's a web application hosted on Heroku utilizing the Express framework for Node
 | GET | `/users/:userId` | Read (show) | User Details | shows a specific user's details 
 | GET | `/okrs/:okrId` | Read (show) | OKR Details | shows a specific OKR's details |
 | `adding items to index`  |   |   |   |   |
-| GET  | `/auth2callback`  | Read (show) | oAuth Log-in  |  oAuth log-in to add a user with their Google credentials | 
+| GET  | `/oauth/google`  | Read (show) | oAuth Log-in  |  oAuth log-in to add a user with their Google credentials | 
+| GET  | `/oauth2callback`  | Read (show) | oAuth Failed Log-in |  existing user, but failed oAuth log-in |
 | POST | `/users` | Create | Add a User | add a user to database |
 | POST | `/okrs` | Create | Add an OKR | add an OKR to database|
 | POST | `/notes` | Create | Add a Note | add a note to database |
