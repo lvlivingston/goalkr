@@ -65,8 +65,12 @@ The minimum viable product (MVP) goal is a functional OKR tool with basic CSS st
 ###### Landing Page
 ![Landing Page](./images/LandingPageWireframe.png)
 ---
-###### Home Page
+###### Home Page Options
 ![Home Page](./images/HomePageWireframe.png)
+---
+![Explained Page](./images/ExplainedPageWireFrame.png)
+---
+![Best Practice Page](./images/BestPracticePageWireFrame.png)
 ---
 ###### OKR Page Options
 ![OKR Page A](./images/OkrPageWireframeA.png)
@@ -74,6 +78,12 @@ The minimum viable product (MVP) goal is a functional OKR tool with basic CSS st
 ![OKR Page B](./images/OkrPageWireframeB.png)
 ---
 ![OKR Page C](./images/OkrPageWireframeC.png)
+---
+![OKR Page D](./images/OkrPageWireframeD.png)
+---
+![OKR Page E](./images/OkrPageWireframeE.png)
+---
+![OKR Page F](./images/OkrPageWireframeF.png)
 ---
 ###### Add OKR Page
 ![Add OKR Page](./images/AddOkrPageWireframe.png)
@@ -83,13 +93,16 @@ The minimum viable product (MVP) goal is a functional OKR tool with basic CSS st
 ---
 ![OKR Detail Page B](./images/OkrDetailPageWireframeB.png)
 ---
-###### Update OKR Page
-![Update OKR Page](./images/UpdateOkrPageWireframe.png)
+###### Update / Delete OKR Page
+![Update / Delete OKR Page](./images/UpdateOkrPageWireframe.png)
 ---
 ###### Note Page Options
 ![Note Page A](./images/NotesPageWireframeA.png)
 ---
 ![Note Page B](./images/NotesPageWireframeB.png)
+---
+###### Add Note Page
+![Add Note Page](./images/AddNotePageWireframe.png)
 
 
 
