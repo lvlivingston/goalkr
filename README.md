@@ -34,7 +34,7 @@ It's a web application hosted on Heroku utilizing the Express framework for Node
 
 ---
 ## ERDs
-![ERD](./images/ErdWireframe.png)
+![ERD](./images/wireframes/ErdWireframe.png)
 
 
 ---
@@ -63,46 +63,46 @@ It's a web application hosted on Heroku utilizing the Express framework for Node
 The minimum viable product (MVP) goal is a functional OKR tool with basic CSS styling.
 
 ###### Landing Page
-![Landing Page](./images/LandingPageWireframe.png)
+![Landing Page](./images/wireframes/LandingPageWireframe.png)
 ---
 ###### Home Page Options
-![Home Page](./images/HomePageWireframe.png)
+![Home Page](./images/wireframes/HomePageWireframe.png)
 ---
-![Explained Page](./images/ExplainedPageWireFrame.png)
+![Explained Page](./images/wireframes/ExplainedPageWireFrame.png)
 ---
-![Best Practice Page](./images/BestPracticePageWireFrame.png)
+![Best Practice Page](./images/wireframes/BestPracticePageWireFrame.png)
 ---
 ###### OKR Page Options
-![OKR Page A](./images/OkrPageWireframeA.png)
+![OKR Page A](./images/wireframes/OkrPageWireframeA.png)
 ---
-![OKR Page B](./images/OkrPageWireframeB.png)
+![OKR Page B](./images/wireframes/OkrPageWireframeB.png)
 ---
-![OKR Page C](./images/OkrPageWireframeC.png)
+![OKR Page C](./images/wireframes/OkrPageWireframeC.png)
 ---
-![OKR Page D](./images/OkrPageWireframeD.png)
+![OKR Page D](./images/wireframes/OkrPageWireframeD.png)
 ---
-![OKR Page E](./images/OkrPageWireframeE.png)
+![OKR Page E](./images/wireframes/OkrPageWireframeE.png)
 ---
-![OKR Page F](./images/OkrPageWireframeF.png)
+![OKR Page F](./images/wireframes/OkrPageWireframeF.png)
 ---
 ###### Add OKR Page
-![Add OKR Page](./images/AddOkrPageWireframe.png)
+![Add OKR Page](./images/wireframes/AddOkrPageWireframe.png)
 ---
 ###### OKR Detail Page Options
-![OKR Detail Page A](./images/OkrDetailPageWireframeA.png)
+![OKR Detail Page A](./images/wireframes/OkrDetailPageWireframeA.png)
 ---
-![OKR Detail Page B](./images/OkrDetailPageWireframeB.png)
+![OKR Detail Page B](./images/wireframes/OkrDetailPageWireframeB.png)
 ---
 ###### Update / Delete OKR Page
-![Update / Delete OKR Page](./images/UpdateOkrPageWireframe.png)
+![Update / Delete OKR Page](./images/wireframes/UpdateOkrPageWireframe.png)
 ---
 ###### Note Page Options
-![Note Page A](./images/NotesPageWireframeA.png)
+![Note Page A](./images/wireframes/NotesPageWireframeA.png)
 ---
-![Note Page B](./images/NotesPageWireframeB.png)
+![Note Page B](./images/wireframes/NotesPageWireframeB.png)
 ---
 ###### Add Note Page
-![Add Note Page](./images/AddNotePageWireframe.png)
+![Add Note Page](./images/wireframes/AddNotePageWireframe.png)
 
 
 
