@@ -8,26 +8,29 @@ A web application created by Leah Livingston
 
 ---
 ### **Project Idea and Description**
-Ever dream of achieving your personal goals with the same precision and focus as the Fortune 100 companies? Look no further. This project brings the power of OKRs to your fingertips. 
+Do you dream of achieving personal [BHAG goals](https://asana.com/resources/bhag-big-hairy-audacious-goal), but get overwhelmed thinking about how to get there?
+
+*You're not alone.* 
+
+This project was created to help individuals adopt the same precision and focus as the Fortune 100 companies. Set challenging objectives with attainable, measurable results and align these with a strategy to create a roadmap for success. Bring the power of OKRs to your life, and empower your future.
 
 ###### What's an OKR?
-OKR, short for [objectives and key results](https://www.forbes.com/advisor/business/what-is-an-okr-definition-examples/), is a proven goal-setting tool that holds accountability, tracks progress, and helps to achieve milestones that might seem "just out of reach". Imagine setting a [BHAG goal](https://asana.com/resources/bhag-big-hairy-audacious-goal), aligning it with your deepest desire, and having a clear roadmap to success!
+OKR, short for [objectives and key results](https://www.forbes.com/advisor/business/what-is-an-okr-definition-examples/), is a proven goal-setting tool that holds you accountable, tracks your progress, and helps you achieve milestones that might otherwise seem "just out of reach". 
 
-
-###### Why do I need this?
-* **Accountability**: Stay on course, achieve your dreams, and watch your progress
-* **Focus**: Laser-focus on what truly matters to you (and future you)
-* **Motivation**: Experience the thrill of accomplishment as you move closer to your dreams, one milestone at a time.
-
+###### How does it work?
+* **Accountability** - Write it down, regularly check-in, and grade your results and pivot when neded 
+* **Laser Focus** - Hone in on what truly matters to you (and future you)
+* **Motivation** - Experience the thrill of accomplishment, one milestone at a time
 
 ###### Is this right for me?
-* Are you longing to buy a house but struggle to save that initial deposit?
-* Do you dream of a healthier lifestyle but find yourself ordering takeout more often than hitting the gym?
-* Have you always wanted to write a book but can't find time in your hectic schedule?
+* Are you longing to buy a house, but struggle to save for that initial down payment?
+* Do you dream of a healthier lifestyle, but find yourself ordering takeout more than you hit the gym?
+* Is your side hustle your passion, but it's not quite bringing in enough to cover the bills?
 
-*You're not alone!* 
+OKRs are the secret weapon consulting firms deploy at large organizations. 
+Why wouldn't you do the same with your own life? 
 
-Life happens, and that's why OKRs are the secret weapon that you should be using.
+
 
 ---
 ### **Tech Stack**
