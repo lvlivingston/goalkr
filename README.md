@@ -50,7 +50,7 @@ It's a web application hosted on Heroku utilizing the Express framework for Node
 | GET  | `/oauth/google`  | Read (show) | oAuth Log-in  |  oAuth log-in to add a user with their Google credentials | 
 | GET  | `/oauth2callback`  | Read (show) | oAuth Failed Log-in |  existing user, but failed oAuth log-in |
 | POST | `/users` | Create | Add a User | add a user to database |
-| POST | `/users/okrs` | Create | Add an OKR | add an OKR to database |
+| POST | `/okrs` | Create | Add an OKR | add an OKR to database |
 | POST | `/okrs/:okrId/notes` | Create | Add a Note | add a note to database |
 | `removing items from index`  |   |   |   |   |
 | DELETE | `/okrs/:okrId` | Destroy | Delete an OKR | remove an OKR from database |
