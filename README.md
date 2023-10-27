@@ -31,7 +31,7 @@ Life happens, and that's why OKRs are the secret weapon that you should be using
 
 ---
 ### **Tech Stack**
-It's an Express web application framework for Node.js employed with HTML, CSS, & JavaScript, MongoDB & oAuth.
+It's an Express web application framework for Node.js employed with HTML, CSS, and JavaScript, MongoDB & oAuth.
 
 
 
@@ -85,7 +85,7 @@ The minimum viable product (MVP) goal is a functional OKR tool with basic CSS st
 
 ---
 ### **User Stories**
-- [ ] AAU, I want the ability to track my OKRs for written accountability & motivation.
+- [ ] AAU, I want the ability to track my OKRs for written accountability and motivation.
 - [ ] AAU, I want the ability to log-in with my Google account credentials.
 - [ ] AAU, I do not want other people to see my individual OKRs.
 - [ ] AAU, I want the ability to update my OKRs (i.e. increase percentage to goal or update spelling mistakes).
@@ -98,9 +98,9 @@ The minimum viable product (MVP) goal is a functional OKR tool with basic CSS st
 
 ###### Style
 - [ ] Include basic CSS to successfully utilize OKR tool
-- [ ] Include left column navigation including 'Logo' icon, 'Home' page link, 'OKR' page link, 'Note' page link & 'Log-out' button
-- [ ] Include 7 individual page views, including:  'Home' screen, 'All OKRs' screen, 'All Notes' screen, 'Add an OKR' screen, 'Add a Note' screen, 'OKR Details' screen, & 'Update OKR' screen
-- [ ] Include visual optimization for desktop & tablet
+- [ ] Include left column navigation including 'Logo' icon, 'Home' page link, 'OKR' page link, 'Note' page link and 'Log-out' button
+- [ ] Include 7 individual page views, including:  'Home' screen, 'All OKRs' screen, 'All Notes' screen, 'Add an OKR' screen, 'Add a Note' screen, 'OKR Details' screen, and 'Update OKR' screen
+- [ ] Include visual optimization for desktop and tablet
 
 ###### Functionality
 - [ ] Include a landing page with ability to log-in via oAuth
