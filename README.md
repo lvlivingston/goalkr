@@ -46,17 +46,17 @@ It's a web application hosted on Heroku utilizing the Express framework for Node
 | GET | `/okrs` | Read (index) | Array of OKRs `{ [ okr, okr ] }` | retrieves the index list of all OKRs |
 | GET | `/notes` | Read (index) | Array of Notes `{ [ note, note ] }` | retrieves the index list of all notes |
 | `individual items`  |   |   |   |   |
-| GET | `/users/:userId` | Read (show) | User details | shows a specific user's details 
-| GET | `/okrs/:okrId` | Read (show) | OKR details | shows a specific OKR's details |
+| GET | `/users/:userId` | Read (show) | User Details | shows a specific user's details 
+| GET | `/okrs/:okrId` | Read (show) | OKR Details | shows a specific OKR's details |
 | `adding items to index`  |   |   |   |   |
-| GET  | `/auth2callback`  | Read (show) | oAuth Log-in  |  oAuth log-in to add a user via Google credentials | 
+| GET  | `/auth2callback`  | Read (show) | oAuth Log-in  |  oAuth log-in to add a user with their Google credentials | 
 | POST | `/users` | Create | Add a User | add a user to database |
 | POST | `/okrs` | Create | Add an OKR | add an OKR to database|
 | POST | `/notes` | Create | Add a Note | add a note to database |
 | `removing items from index`  |   |   |   |   |
-| DELETE | `/users` | Destroy | Delete a user | remove a user from database 
+| DELETE | `/users` | Destroy | Delete a User | remove a user from database 
 | DELETE | `/okrs` | Destroy | Delete an OKR | remove an OKR from database |
-| DELETE | `/notes` | Destroy | Delete a note | remove a note from database |
+| DELETE | `/notes` | Destroy | Delete a Note | remove a note from database |
 | `updating items in index`  |   |   |   |   |
 | PUT | `/users/:userId` | Update | Update User | update a specific user's details | 
 | PUT | `/okrs/:okrId` | Update | Update OKR | update a specific OKR's details |
