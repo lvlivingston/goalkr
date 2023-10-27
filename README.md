@@ -12,23 +12,17 @@ Do you dream of achieving personal [BHAG goals](https://asana.com/resources/bhag
 
 *You're not alone.* 
 
-This project was created to help individuals adopt the same precision and focus as the Fortune 100 companies. Set challenging objectives with attainable, measurable results and align these with a strategy to create a roadmap for success. Bring the power of OKRs to your life, and empower your future.
+This project was created to help individuals adopt the same precision and focus as Fortune 100 companies. Set challenging objectives with measurable key results. Align these with a long-term strategy to create your personal roadmap to success. Bring the power of OKRs to your life, and empower your future.
 
 ###### What's an OKR?
-OKR, short for [objectives and key results](https://www.forbes.com/advisor/business/what-is-an-okr-definition-examples/), is a proven goal-setting tool that holds you accountable, tracks your progress, and helps you achieve milestones that might otherwise seem "just out of reach". 
+OKR, short for [objectives and key results](https://www.forbes.com/advisor/business/what-is-an-okr-definition-examples/), is a proven goal-setting tool that holds you accountable, tracks your progress, and helps you achieve milestones that might seem "just out of reach". 
 
 ###### How does it work?
-* **Accountability** - Write it down, regularly check-in, and grade your results and pivot when neded 
+* **Accountability** - Write it down, regularly check-in, and grade your results to pivot when necessary 
 * **Laser Focus** - Hone in on what truly matters to you (and future you)
 * **Motivation** - Experience the thrill of accomplishment, one milestone at a time
 
-###### Is this right for me?
-* Are you longing to buy a house, but struggle to save for that initial down payment?
-* Do you dream of a healthier lifestyle, but find yourself ordering takeout more than you hit the gym?
-* Is your side hustle your passion, but it's not quite bringing in enough to cover the bills?
-
-OKRs are the secret weapon consulting firms deploy at large organizations. 
-Why wouldn't you do the same with your own life? 
+OKRs are the secret weapon consulting firms deploy at large organizations. Do the same with your own life.
 
 
 
