@@ -31,7 +31,7 @@ Life happens, and that's why OKRs are the secret weapon that you should be using
 
 ---
 ### **Tech Stack**
-It's an Express web application framework for Node.js employed with HTML, CSS, and JavaScript, MongoDB & oAuth.
+It's a web application hosted on Heroku utilizing the Express framework for Node.js employed with HTML, CSS, and JavaScript, MongoDB & oAuth.
 
 
 
