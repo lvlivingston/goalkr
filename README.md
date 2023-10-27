@@ -15,7 +15,7 @@ Do you dream of achieving personal [BHAG goals](https://asana.com/resources/bhag
 This project was created to help individuals adopt the same precision and focus as Fortune 100 companies. Set challenging objectives with measurable key results. Align these with a long-term strategy to create your personal roadmap to success. Bring the power of OKRs to your life, and empower your future.
 
 ###### What's an OKR?
-Short for [objectives and key results](https://www.forbes.com/advisor/business/what-is-an-okr-definition-examples/), OKRs are a proven goal-setting tool to hold you accountable, track your progress, and help achieve milestones that might seem "just out of reach". 
+Short for [objectives and key results](https://www.forbes.com/advisor/business/what-is-an-okr-definition-examples/), OKRs are a proven goal-setting tool that holds you accountable, tracks your progress, and helps you achieve milestones that might seem "just out of reach". 
 
 ###### How does it work?
 * **Accountability** - Write it down, regularly check-in, and grade your results to pivot when necessary 
