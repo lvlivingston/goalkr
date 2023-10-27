@@ -37,7 +37,7 @@ It's a web application hosted on Heroku utilizing the Express framework for Node
 
 ---
 ## ERDs
-
+![ERD](./images/ErdWireframe.png)
 
 
 ---
