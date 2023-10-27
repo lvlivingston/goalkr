@@ -52,34 +52,34 @@ It's an Express web application framework for Node.js employed with HTML, CSS, &
 ### **Wireframes of your game**
 The minimum viable product (MVP) goal is a functional OKR tool with basic CSS styling.
 
-###### Starting Screen
-![Landing Screen](./images/LandingPageWireframe.png)
+###### Landing Page
+![Landing Page](./images/LandingPageWireframe.png)
 ---
-###### Home Screen
-![Home Screen](./images/HomePageWireframe.png)
+###### Home Page
+![Home Page](./images/HomePageWireframe.png)
 ---
-###### OKR Screens
-![OKR Screen A](./images/OkrPageWireframeA.png)
+###### OKR Page Options
+![OKR Page A](./images/OkrPageWireframeA.png)
 ---
-![OKR Screen B](./images/OkrPageWireframeB.png)
+![OKR Page B](./images/OkrPageWireframeB.png)
 ---
-![OKR Screen C](./images/OkrPageWireframeC.png)
+![OKR Page C](./images/OkrPageWireframeC.png)
 ---
-###### Add OKR Screen
-![Add OKR Screen](./images/AddOkrPageWireframe.png)
+###### Add OKR Page
+![Add OKR Page](./images/AddOkrPageWireframe.png)
 ---
-###### OKR Detail Screens
-![OKR Detail Screen A](./images/OkrDetailPageWireframeA.png)
+###### OKR Detail Page Options
+![OKR Detail Page A](./images/OkrDetailPageWireframeA.png)
 ---
-![OKR Detail Screen B](./images/OkrDetailPageWireframeB.png)
+![OKR Detail Page B](./images/OkrDetailPageWireframeB.png)
 ---
-###### Update OKR Screen
-!Update OKR Screen](./images/UpdateOkrPageWireframe.png)
+###### Update OKR Page
+!Update OKR Page](./images/UpdateOkrPageWireframe.png)
 ---
-###### Note Screens
-![Note Screen A](./images/NotesPageWireframeA.png)
+###### Note Page Options
+![Note Page A](./images/NotesPageWireframeA.png)
 ---
-![Note Screen B](./images/NotesPageWireframeB.png)
+![Note Page B](./images/NotesPageWireframeB.png)
 
 
 
