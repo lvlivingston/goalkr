@@ -85,11 +85,11 @@ The minimum viable product (MVP) goal is a functional OKR tool with basic CSS st
 
 ---
 ### **User Stories**
-- [ ] AAU, I the ability to track my quarterly objectives and key results (OKRs) for written accountability towards my personal goals
-- [ ] AAU, I want the ability to log-in with my Google account credentials
-- [ ] AAU, I do not want other people to see my individual OKRs
-- [ ] AAU, I want the ability to update my OKRs (i.e. increase percentage to goal or update spelling mistakes)
-- [ ] AAU, I want the ability to add notes to track personal progress throughout the quarter
+- [ ] AAU, I want the ability to track my OKRs for written accountability & motivation.
+- [ ] AAU, I want the ability to log-in with my Google account credentials.
+- [ ] AAU, I do not want other people to see my individual OKRs.
+- [ ] AAU, I want the ability to update my OKRs (i.e. increase percentage to goal or update spelling mistakes).
+- [ ] AAU, I want the ability to add notes to track personal progress throughout the quarter.
 
 
 
@@ -97,18 +97,19 @@ The minimum viable product (MVP) goal is a functional OKR tool with basic CSS st
 ### **MVP Goals**
 
 ###### Style
-- [ ] Include basic CSS to ensure functionality works
-- [ ] Include left column navigation including 'Logo' icon, 'Home' page, 'OKR' page, 'Note' page & 'Log Out' button
-- [ ] Include individual page views of 'Home' screen, 'All OKRs' screen, 'All Notes' screen, 'Add an OKR' screen, 'Add a Note' screen, 'OKR Details' screen, & 'Update OKR' screen
-- [ ] Optimization for desktop & tablet
+- [ ] Include basic CSS to successfully utilize OKR tool
+- [ ] Include left column navigation including 'Logo' icon, 'Home' page link, 'OKR' page link, 'Note' page link & 'Log-out' button
+- [ ] Include 7 individual page views, including:  'Home' screen, 'All OKRs' screen, 'All Notes' screen, 'Add an OKR' screen, 'Add a Note' screen, 'OKR Details' screen, & 'Update OKR' screen
+- [ ] Include visual optimization for desktop & tablet
 
 ###### Functionality
 - [ ] Include a landing page with ability to log-in via oAuth
 - [ ] Include ability to log-out after logging-in
-- [ ] Include ability to add / update / delete individual objectives & key results (OKRs) 
+- [ ] Include ability to add / update / delete individual OKRs
 - [ ] Include ability to add a Note
-- [ ] Optimization for desktop & tablet  
-- [ ] Objective's percentage progress is calculated automatically based off individual percentages
+- [ ] Include ability for private view of individual OKRs and Notes (logged-in user can only see their own input)
+- [ ] Include optimized functionality for desktop and tablet  
+- [ ] Include ability for percentage progress to be calculated automatically based off key result percentages
 
 
 
@@ -116,17 +117,17 @@ The minimum viable product (MVP) goal is a functional OKR tool with basic CSS st
 ### **Stretch Goals**
 
 ###### Style
-- [ ] Includes CSS styling following brand kit
-- [ ] Completed brand kit for future development use
-- [ ] Optimization for mobile
+- [ ] Include CSS styling following a 'Brand Kit'
+- [ ] Include a 'Brand Kit' for future development use
+- [ ] Include visual optimization for mobile
 
 ###### Functionality
 - [ ] Include ability to update / delete Notes 
-- [ ] Optimization for mobile
-- [ ] Ability to update existing OKRs & Notes in same screen (rather than being directed to a new screen)
-- [ ] Ability to archive a quarter's OKRs into historical view (or listed below current OKRs)
-- [ ] Ability to set annual goals & break into quarterly chunks for long-term planning
-- [ ] Home screen analytics showing progress over time
-- [ ] Notification / Email reminders for regular progress check-ins
-- [ ] Ability to join group (i.e. family, friend or professional group) to work toward shared common goals
-- [ ] Ability to share progress with family members / friends
+- [ ] Include optimization for mobile
+- [ ] Include ability to update existing OKRs and Notes in same screen (rather than being directed to a new screen)
+- [ ] Include ability to archive a quarter's OKRs into historical view (or listed below current OKRs)
+- [ ] Include ability to set annual goals and break into quarterly chunks for long-term planning
+- [ ] Improve home page analytics to show progress over time
+- [ ] Add notification / Email reminders for regular progress check-ins
+- [ ] Include ability to join a group (i.e. family, friend or professional group) to work toward shared common goals
+- [ ] Include ability to share progress with family members / friends on home page
