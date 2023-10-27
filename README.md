@@ -74,7 +74,7 @@ The minimum viable product (MVP) goal is a functional OKR tool with basic CSS st
 ![OKR Detail Page B](./images/OkrDetailPageWireframeB.png)
 ---
 ###### Update OKR Page
-!Update OKR Page](./images/UpdateOkrPageWireframe.png)
+![Update OKR Page](./images/UpdateOkrPageWireframe.png)
 ---
 ###### Note Page Options
 ![Note Page A](./images/NotesPageWireframeA.png)
