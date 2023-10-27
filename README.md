@@ -42,28 +42,20 @@ It's a web application hosted on Heroku utilizing the Express framework for Node
 | HTTP METHOD | URL | CRUD | Response | Notes |
 | -------------------- | ------------- | ---- | -------- | ----- |
 | `full index of items`  |   |   |   |   |
-| GET | `/users` | Read (index) | Array of Users `{ [ user, user ] }` | retrieves the index list of all users | 
 | GET | `/okrs` | Read (index) | Array of OKRs `{ [ okr, okr ] }` | retrieves the index list of all OKRs |
 | GET | `/notes` | Read (index) | Array of Notes `{ [ note, note ] }` | retrieves the index list of all notes |
 | `individual items`  |   |   |   |   |
-| GET | `/users/:userId` | Read (show) | User Details | shows a specific user's details 
 | GET | `/okrs/:okrId` | Read (show) | OKR Details | shows a specific OKR's details |
 | `adding items to index`  |   |   |   |   |
 | GET  | `/oauth/google`  | Read (show) | oAuth Log-in  |  oAuth log-in to add a user with their Google credentials | 
 | GET  | `/oauth2callback`  | Read (show) | oAuth Failed Log-in |  existing user, but failed oAuth log-in |
 | POST | `/users` | Create | Add a User | add a user to database |
-| POST | `/okrs` | Create | Add an OKR | add an OKR to database|
-| POST | `/notes` | Create | Add a Note | add a note to database |
+| POST | `/users/okrs` | Create | Add an OKR | add an OKR to database |
+| POST | `/okrs/:okrId/notes` | Create | Add a Note | add a note to database |
 | `removing items from index`  |   |   |   |   |
-| DELETE | `/users` | Destroy | Delete a User | remove a user from database 
-| DELETE | `/okrs` | Destroy | Delete an OKR | remove an OKR from database |
-| DELETE | `/notes` | Destroy | Delete a Note | remove a note from database |
+| DELETE | `/okrs/:okrId` | Destroy | Delete an OKR | remove an OKR from database |
 | `updating items in index`  |   |   |   |   |
-| PUT | `/users/:userId` | Update | Update User | update a specific user's details | 
 | PUT | `/okrs/:okrId` | Update | Update OKR | update a specific OKR's details |
-| PUT | `/notes/:noteId` | Update | Update Note | update a specific note |
-| POST | `/notes/:noteId/okrs` | Create | Add an OKR to a Note | adds an OKR to a specific note | 
-| DELETE | `/okrs/:okrId/notes` | Destroy | Remove a Note from an OKR | removes a Note from a specific OKR | 
 
 
 ---
