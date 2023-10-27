@@ -39,17 +39,24 @@ It's a web application hosted on Heroku utilizing the Express framework for Node
 
 ---
 ### **Restful Routing Chart**
-| HTTP METHOD (_Verb_) | URL (_Nouns_) | CRUD | Response | Notes |
+| HTTP METHOD | URL | CRUD | Response | Notes |
 | -------------------- | ------------- | ---- | -------- | ----- |
+| GET | `/users` | Read (index) | Array of users `{ [ user, user ] }` | retrieves the index list of all users | 
 | GET | `/okrs` | Read (index) | Array of OKRs `{ [ okr, okr ] }` | retrieves the index list of all OKRs |
 | GET | `/notes` | Read (index) | Array of Notes `{ [ note, note ] }` | retrieves the index list of all notes |
+| GET | `/users/:userId` | Read (show) | User details | shows a specific user's details 
 | GET | `/okrs/:okrId` | Read (show) | OKR details | shows a specific OKR's details |
 | POST | `/users` | Create | Add a User | add a user to database |
 | POST | `/okrs` | Create | Add an OKR | add an OKR to database|
 | POST | `/notes` | Create | Add a Note | add a note to database |
+| DELETE | `/users` | Destroy | Delete a user | remove a user from database 
 | DELETE | `/okrs` | Destroy | Delete an OKR | remove an OKR from database |
+| DELETE | `/notes` | Destroy | Delete a note | remove a note from database |
+| PUT | `/users/:userId` | Update | Update User | update a specific user's details | 
 | PUT | `/okrs/:okrId` | Update | Update OKR | update a specific OKR's details |
-
+| PUT | `/notes/:noteId` | Update | Update Note | update a specific note |
+| POST | `/notes/:noteId/okrs` | Create | Add an OKR to a Note | adds an OKR to a specific note | 
+| DELETE | `/okrs/:okrId/notes` | Destroy | Remove a Note from an OKR | removes a Note from a specific OKR | 
 
 
 ---
