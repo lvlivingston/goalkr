@@ -25,11 +25,13 @@ OKR, short for [objectives and key results](https://www.forbes.com/advisor/busin
 * Do you dream of a healthier lifestyle but find yourself ordering takeout more often than hitting the gym?
 * Have you always wanted to write a book but can't find time in your hectic schedule?
 
-You're not alone! Life happens, and that's why OKRs are the secret weapon used by successful organizations across the globe.
+*You're not alone!* 
+
+Life happens, and that's why OKRs are the secret weapon that you should be using.
 
 ---
 ### **Tech Stack**
-It's an Express web application framework for Node.js, employed with HTML, CSS, & JavaScript, MongoDB & oAuth.
+It's an Express web application framework for Node.js employed with HTML, CSS, & JavaScript, MongoDB & oAuth.
 
 
 
@@ -48,7 +50,7 @@ It's an Express web application framework for Node.js, employed with HTML, CSS, 
 
 ---
 ### **Wireframes of your game**
-The minimum viable product (MVP) goal is for the user interface to show basic CSS in order for a functional OKR tool to be utilized.
+The minimum viable product (MVP) goal is a functional OKR tool with basic CSS styling.
 
 ###### Starting Screen
 ![Landing Screen](./images/LandingPageWireframe.png)
