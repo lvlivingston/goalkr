@@ -42,7 +42,30 @@ It's a web application hosted on Heroku utilizing the Express framework for Node
 
 ---
 ### **Restful Routing Chart**
-
+| HTTP METHOD (_Verb_) | URL (_Nouns_) | CRUD | Response | Notes |
+| -------------------- | ------------- | ---- | -------- | ----- |
+<!-- | `full index of items`  |   |   |   |   | -->
+<!-- | GET | `/users` | Read (index) | Array of users `{ [ user, user ] }` | retrieves the index list of all users | -->
+| GET | `/okrs` | Read (index) | Array of okrs `{ [ okr, okr ] }` | retrieves the index list of all okrs |
+| GET | `/notes` | Read (index) | Array of notes `{ [ note, note ] }` | retrieves the index list of all notes |
+<!-- | `individual items`  |   |   |   |   | -->
+<!-- | GET | `/users/:userId` | Read (show) | User details | shows a specific user's details | -->
+| GET | `/okrs/:okrId` | Read (show) | OKR details | shows a specific OKR's details |
+<!-- | GET | `/notes/:noteId` | Read (show) | Note details | shows a specific note's details | -->
+<!-- | `adding items to index`  |   |   |   |   | -->
+| POST | `/users` | Create | Add a user | add a user to database |
+| POST | `/okrs` | Create | Add a okr | add a okr to database|
+| POST | `/notes` | Create | Add a note | add a note to database |
+<!-- | `removing items from index`  |   |   |   |   | -->
+<!-- | DELETE | `/users` | Destroy | Delete a user | remove a user from database | -->
+| DELETE | `/okrs` | Destroy | Delete an okr | remove an okr from database |
+<!-- | DELETE | `/notes` | Destroy | Delete a note | remove a note from database | -->
+<!-- | `updating items in index`  |   |   |   |   | -->
+| PUT | `/okrs/:okrId` | Update | Update OKR | update a specific OKR's details |
+<!-- | PUT | `/notes/:noteId` | Update | Update Note | update a specific note | -->
+<!-- | PUT | `/users/:userId` | Update | Update User | update a specific user's details | -->
+<!-- | POST | `/notes/:noteId/okrs` | Create | Add an OKR to a Note | adds an OKR to a specific note | -->
+<!-- | DELETE | `/okrs/:okrId/notes` | Destroy | Remove a Note from an OKR | removes a note from a specific OKR | -->
 
 
 
