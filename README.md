@@ -22,7 +22,7 @@ Short for [objectives and key results](https://www.forbes.com/advisor/business/w
 * **Laser Focus** - Hone in on what truly matters to you (and future you)
 * **Motivation** - Experience the thrill of accomplishment, one milestone at a time
 
-OKRs are the secret weapon consulting firms deploy at large organizations. Do the same with your own life.
+OKRs are the secret weapon consulting firms deploy at large organizations. Do the same with your life.
 
 
 
