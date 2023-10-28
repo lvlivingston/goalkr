@@ -3,7 +3,7 @@ const router = express.Router();
 const passport = require('passport');
 const indexRouter = require("../controllers/index.js")
 
-// initial route to landing page to login
+// GET / initial route to login landing page
 router.get('/', indexRouter.index);
 
 // Google OAuth login route
@@ -26,6 +26,9 @@ router.get('/oauth2callback', passport.authenticate(
     failureRedirect: '/'
   }
 ));
+
+// POST /users (add a user to database)
+router.post('/users', ensureLoggedIn, indexRouter.create);
 
 // OAuth logout route
 router.get('/logout', function(req, res){
