@@ -3,6 +3,7 @@ const router = express.Router();
 const passport = require('passport');
 const indexRouter = require("../controllers/index.js")
 
+// initial route to landing page to login
 router.get('/', indexRouter.index);
 
 // Google OAuth login route
@@ -32,5 +33,12 @@ router.get('/logout', function(req, res){
     res.redirect('/');
   });
 });
+
+//render home title
+app.get('/movies', (req, res) => {
+  const title = 'All Movies';
+  res.render('movies', { title: title });
+});
+
 
 module.exports = router;
