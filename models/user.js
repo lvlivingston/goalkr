@@ -6,10 +6,10 @@ const noteSchema = new Schema({
   note: {
     type: String,
     required: true
-    }, {
-      timestamps: true
-    }
-  });
+  }
+}, {
+  timestamps: true
+});
 
 // okr subdocument of user
 const okrSchema = new Schema({
@@ -43,7 +43,8 @@ const okrSchema = new Schema({
     max: 100,
     notes: [noteSchema]
   timestamps: true
-  }, {
+  }
+}, {
   timestamps: true
 });
 
