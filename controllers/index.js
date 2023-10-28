@@ -1,3 +1,7 @@
+const User = require('../models/user');
+const Okr = require('../models/okr');
+const Note = require('../models/note');
+
 module.exports = {
   index
 }

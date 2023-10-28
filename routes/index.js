@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const passport = require('passport');
-const indexRouter = require("../controllers/index.js")
+const indexRouter = require("../controllers/index.js");
+const ensureLoggedIn = require('../config/ensureLoggedIn');
 
 // GET / initial route to login landing page
 router.get('/', indexRouter.index);
