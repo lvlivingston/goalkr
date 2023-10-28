@@ -34,11 +34,4 @@ router.get('/logout', function(req, res){
   });
 });
 
-//render home title
-app.get('/movies', (req, res) => {
-  const title = 'All Movies';
-  res.render('movies', { title: title });
-});
-
-
 module.exports = router;
