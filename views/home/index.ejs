@@ -1,14 +1,24 @@
 <%- include('./partials/header') %>
 
 <% if (!user) { %>
-	<p>please login to continue</p>
+    <a href="/">
+        <div class="homeLogo"><img src="./images/logos/LogoWhite.png" alt="White Bullseye"></div>
+    </a>
+    <h1>Hit your target. Achieve Success.</h1>
+    <p>Please login to continue...</p>
 <% } else { %>
-	<!-- <p>Welcome, <%= user.name %> <%= user.email %></p> -->
-	<% if (user.avatar) { %>
-		<!-- <img src="<%= user.avatar %>" alt="<%= user.name %>'s avatar" /> -->
-	<% } %>
+    <div class="homeIcons">
+        <a href="/okrs/new">
+            <div class="addOkrIcon"><img src="./images/icons/IconAddOkr.png" alt="Add OKR"></div>
+        </a>
+        <a href="/notes/new">
+            <div class="addNoteIcon"><img src="./images/icons/IconAddNote.png" alt="Add OKR"></div>
+        </a>
+    </div>
+    <div class="homeLinks">   
+        <a href="/whatareokrs">What are OKRs?</a>
+        <a href="/bestpractices">OKR Best Practices</a>
+    </div>
 <% } %>
-
-
 
 <%- include('./partials/footer') %>
