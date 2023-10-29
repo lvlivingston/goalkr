@@ -3,12 +3,36 @@
 <% if (!user) { %>
 	<p>please login to continue</p>
 <% } else { %>
-	<!-- <p>Welcome, <%= user.name %> <%= user.email %></p> -->
-	<% if (user.avatar) { %>
-		<!-- <img src="<%= user.avatar %>" alt="<%= user.name %>'s avatar" /> -->
-	<% } %>
+	<% if (okrs.length) { %>
+		<h2> <%= timeperiod %></h2>
+		<table>
+			<thead>
+				<tr>
+					<th><%= objective %></th>
+					<th><%= endOfQuarterDate %></th>
+					<th><%= calculatedPercentage %></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><%= KeyResultOne %></td>
+					<td><%= KeyResultTwo %></td>
+					<td><%= KeyResultThree %></td>
+				</tr>
+				<tr>
+					<td><%= keyResultOneDueDate %></td>
+					<td><%= keyResultTwoDueDate %></td>
+					<td><%= keyResultThreeDueDate %></td>
+				</tr>
+				<tr>
+					<td><%= keyResultOnePercentage %></td>
+					<td><%= keyResultTwoPercentage %></td>
+					<td><%= keyResultThreePercentage %></td>
+				</tr>
+			</tbody>
+		</table>
+<% } else { %>
+  <h5>You haven't set any OKRs yet.</h5>
 <% } %>
-
-
 
 <%- include('./partials/footer') %>
