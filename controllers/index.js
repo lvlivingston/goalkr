@@ -14,10 +14,10 @@ function index(req, res) {
   });
 }
 
-// render the "Add Okr" icon/link & be able to click to "Add OKR" page
+// render the "Add Okr" icon/link on screen & be able to redirect to "Add OKR" page
 
-// render the "Add Note" icon/link & be able to click to "Add Note" page
+// render the "Add Note" icon/link & be able & be able to redirect to "Add Note" page
 
-// render the "What are OKRs?" link & be able to click to "What are OKRs?" page (Ideally, have screen swipe left to show info on right)
+// render the "What are OKRs?" link/button & be able to redirect to "What are OKRs?" page 
 
-// render the "OKR Best Practices" link & be able to click to "OKR Best Practices" page (Ideally, have screen swipe left to show info on right)
+// render the "OKR Best Practices" link/button & be able to redirect to "OKR Best Practices" page 

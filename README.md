@@ -124,6 +124,7 @@ The minimum viable product (MVP) goal is a functional OKR tool with basic CSS st
 - [ ] Include left column navigation including 'Logo' icon, 'Home' page link, 'OKR' page link, 'Note' page link and 'Log-out' button
 - [ ] Include 7 individual page views, including:  'Home' screen, 'All OKRs' screen, 'All Notes' screen, 'Add an OKR' screen, 'Add a Note' screen, 'OKR Details' screen, and 'Update OKR' screen
 - [ ] Include visual optimization for desktop and tablet
+- [ ] Home page buttons to click to the next (i.e.[ okr1 ]  [ ok2 ]   [ okr3 ] )
 
 ###### Functionality
 - [ ] Include a landing page with ability to log-in via oAuth
@@ -143,6 +144,8 @@ The minimum viable product (MVP) goal is a functional OKR tool with basic CSS st
 - [ ] Include CSS styling following a 'Brand Kit'
 - [ ] Include a 'Brand Kit' for future development use
 - [ ] Include visual optimization for mobile
+- [ ] Add ability to swipe left / right on screen for Homepage & OKR view options
+
 
 ###### Functionality
 - [ ] Include ability to update / delete Notes 

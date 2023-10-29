@@ -5,8 +5,10 @@
  */
 
 var app = require('../server');
-var debug = require('debug')('mongoose-movies:server');
+var debug = require('debug')('goalkr:server');
+// console.log(debug);
 var http = require('http');
+// console.log(http);
 
 /**
  * Get port from environment and store in Express.
