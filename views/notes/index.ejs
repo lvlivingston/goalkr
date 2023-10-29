@@ -3,12 +3,14 @@
 <% if (!user) { %>
 	<p>please login to continue</p>
 <% } else { %>
-	<!-- <p>Welcome, <%= user.name %> <%= user.email %></p> -->
-	<% if (user.avatar) { %>
-		<!-- <img src="<%= user.avatar %>" alt="<%= user.name %>'s avatar" /> -->
-	<% } %>
+	<section id="show-notes">
+		<div>Date: </div>
+		<div><%= note.date %></div>
+		<div>Note: </div>
+		<div><%= note.noteText %></div>
+		<div>OKR: </div>
+		<div><%= note.okrChoice %></div>
+	  </section>
 <% } %>
-
-
 
 <%- include('./partials/footer') %>

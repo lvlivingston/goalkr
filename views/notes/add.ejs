@@ -5,9 +5,9 @@
 <% } else { %>
 	<form id="new-note-form" action="/notes" method="POST">
 		<label>New Note:</label>
-		<input type="text" name="newNote" placeholder="Write your note here">
+		<input type="text" name="noteText" placeholder="Write your note here">
 		<label>Choose Quarter and Year:</label>
-		<select name="chooseQuarterYear">
+		<select name="QuarterYearChoice">
 			<option value="Choose" selected>Make a choice</option>
 			<option value="Q423">Q4 2023</option>
 			<option value="Q124">Q1 2024</option>
@@ -20,7 +20,7 @@
 			<option value="Q425">Q4 2025</option>
 		</select>
 		<label>Choose OKR:</label>
-		<select name="chooseOKR">
+		<select name="okrChoice">
 			<option value="Choose" selected>Make a choice</option>
 			<option value="Objective1">Objective One</option>
 			<option value="Objective1KR1">O1 - Key Result One</option>
