@@ -3,14 +3,25 @@
 <% if (!user) { %>
 	<p>please login to continue</p>
 <% } else { %>
-	<section id="show-notes">
-		<div>Date: </div>
-		<div><%= note.date %></div>
-		<div>Note: </div>
-		<div><%= note.noteText %></div>
-		<div>OKR: </div>
-		<div><%= note.okrChoice %></div>
-	  </section>
+	<% if (notes.length) { %>
+		<table>
+		  	<thead>
+				<tr>
+					<th>Date</th>
+					<th>Note</th>
+					<th>OKR</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><%= n.addDate.toLocaleDateString() %></td>
+					<td><%= n.noteText %></td>
+					<td><%= n.okrChoice %></td>
+				</tr>
+			</tbody>
+		</table>
+<% } else { %>
+  <h5>No Notes Yet</h5>
 <% } %>
 
 <%- include('./partials/footer') %>
