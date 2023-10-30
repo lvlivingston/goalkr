@@ -28,8 +28,14 @@ router.get('/oauth2callback', passport.authenticate(
   }
 ));
 
-// GET / home page (See home page)
+// GET /home (See home page)
 router.get('/home', ensureLoggedIn, indexRouter.home);
+
+// GET /home/whatareokrs (See "What are OKRs" page)
+router.get('/whatareokrs', ensureLoggedIn, indexRouter.viewWhat);
+
+// GET /home/bestpractices (See "OKR Best Practices" page)
+router.get('/bestpractices', ensureLoggedIn, indexRouter.viewBest);
 
 // OAuth logout route
 router.get('/logout', function(req, res){

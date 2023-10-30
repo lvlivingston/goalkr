@@ -4,23 +4,34 @@ const Note = require('../models/note');
 
 module.exports = {
   // add exports here i.e. index, show, newOkr, create, delete
-      home,
-      index, 
+    index, 
+    home,
+    viewWhat,
+    viewBest,
       // errorOkr,
       // create,
       // show,
       // delete: deleteOkr
-  };
+};
+  
+function index(req, res) {
+    res.render("home/index.ejs", {
+      title: "Homepage"
+    });
+}
   
 async function home(req, res) {
-      res.render('home/index.ejs', { title: 'Homepage' });
+    res.render('home/index.ejs', { title: 'Homepage' });
 }
 
-function index(req, res) {
-  res.render("home/index.ejs", {
-    title: "Homepage"
-  });
+async function viewWhat(req, res) {
+    res.render('home/what.ejs', { title: 'What are OKRs?' });
 }
+
+async function viewBest(req, res) {
+    res.render('home/best.ejs', { title: 'OKR Best Practices' });
+}
+
 
 // async function index(req, res) {
 //   const okrs = await Okr.find({});

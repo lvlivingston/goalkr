@@ -4,6 +4,14 @@
     color: #ffffff;
 }
 
+.purple-font {
+  color: #2a187d;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .logged-out {
   background-color: #2a187d;
   color: #ffffff;
