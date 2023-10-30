@@ -3,8 +3,24 @@ const Okr = require('../models/okr');
 const Note = require('../models/note');
 
 module.exports = {
-    // add exports here i.e. index, show, newNote, create
-      };
+// add exports here i.e. index, show, newOkr, create, delete
+    indexNote,
+    addNewNotePage,    
+    // errorOkr,
+    // create,
+    // show,
+    // delete: deleteOkr
+};
+
+async function indexNote(req, res) {
+    const notes = await Note.find({});
+    // this is the file name in the views folder
+    res.render('notes/index.ejs', { title: 'All Notes', notes });
+}
+
+async function addNewNotePage(req, res) {
+  res.render('notes/add.ejs', { title: 'Add a Note' });
+}
 
 // render "Add Note" view, including:
 // Textbox to type in Note (max 500 characters)

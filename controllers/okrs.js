@@ -4,21 +4,21 @@ const Note = require('../models/note');
 
 module.exports = {
 // add exports here i.e. index, show, newOkr, create, delete
-    index,
-    addNew,    
+    indexOkr,
+    addNewOkrPage,    
     // errorOkr,
     // create,
     // show,
     // delete: deleteOkr
 };
 
-async function index(req, res) {
+async function indexOkr(req, res) {
     const okrs = await Okr.find({});
     // this is the file name in the views folder
     res.render('okrs/index.ejs', { title: 'All OKRs', okrs });
 }
 
-async function addNew(req, res) {
+async function addNewOkrPage(req, res) {
     res.render('okrs/add.ejs', { title: 'Add an OKR' });
 }
 

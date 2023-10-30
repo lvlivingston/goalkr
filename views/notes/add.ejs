@@ -1,44 +1,4 @@
 <%- include('../partials/header') %>
 
-<% if (!user) { %>
-	<p>please login to continue</p>
-<% } else { %>
-	<form id="new-note-form" action="/notes" method="POST">
-		<label>New Note:</label>
-		<input type="text" name="noteText" placeholder="Write your note here">
-		<label>Choose Quarter and Year:</label>
-		<select name="QuarterYearChoice">
-			<option value="Choose" selected>Make a choice</option>
-			<option value="Q423">Q4 2023</option>
-			<option value="Q124">Q1 2024</option>
-			<option value="Q224">Q2 2024</option>
-			<option value="Q324">Q3 2024</option>
-			<option value="Q424">Q4 2024</option>
-			<option value="Q125">Q1 2025</option>
-			<option value="Q225">Q2 2025</option>
-			<option value="Q325">Q3 2025</option>
-			<option value="Q425">Q4 2025</option>
-		</select>
-		<label>Choose OKR:</label>
-		<select name="okrChoice">
-			<option value="Choose" selected>Make a choice</option>
-			<option value="Objective1">Objective One</option>
-			<option value="Objective1KR1">O1 - Key Result One</option>
-			<option value="Objective1KR2">O1 - Key Result Two</option>
-			<option value="Objective1KR3">O1 - Key Result Three</option>
-			<option value="Objective2">Objective Two</option>
-			<option value="Objective2KR1">O2 - Key Result One</option>
-			<option value="Objective2KR2">O2 - Key Result Two</option>
-			<option value="Objective2KR3">O2 - Key Result Three</option>
-			<option value="Objective3">Objective Three</option>
-			<option value="Objective3KR1">O3 - Key Result One</option>
-			<option value="Objective3KR2">O3 - Key Result Two</option>
-			<option value="Objective3KR3">O3 - Key Result Three</option>
-		</select>
-		<label>Date:</label>
-		<input type="number" name="addDate" placeholder="Date()">
-		<input type="submit" value="Add Note">
-	</form>
-<% } %>
 
 <%- include('../partials/footer') %>
