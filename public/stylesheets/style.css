@@ -207,14 +207,15 @@ body > main h1:first-child {
   align-items: center;
 }
 
-#new-okr-form {
+#new-okr-form,
+#new-note-form {
   display: flex;
   flex-direction: column;
   color: #2A187D;
 }
 
 #new-okr-form *,
-#add-review-form *,
+#new-note-form *,
 #add-performer-form * {
   font-size: 20px;
   padding: 5px;
@@ -267,7 +268,6 @@ table td {
   font-weight: bold;
 }
 
-#add-review-form,
 #add-performer-form,
 #update-review-form {
   display: grid;
@@ -276,7 +276,7 @@ table td {
   margin-bottom: 2rem;
 }
 
-#add-review-form input[type="submit"],
+#note-note-form input[type="submit"],
 #add-performer-form input[type="submit"]  {
   width: 10rem;
   grid-column: 2 / 3;
