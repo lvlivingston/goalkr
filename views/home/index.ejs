@@ -5,17 +5,19 @@
     <h1>Hit your target. Achieve Success.</h1>
     <p>Please login with your Google account to continue.</p>
 <% } else { %>
-    <div class="homeIcons">
+    <div class="home-icons, center-spacing">
         <a href="/okrs/new">
-            <div class="addOkrIcon"><img src="./images/icons/IconAddOkr.png" alt="Add OKR"></div>
+            <div class="center-spacing"><img src="./images/logos/LogoPurple.png" alt="Add OKR" class="addOkrIcon">Add an OKR</div>
         </a>
         <a href="/notes/new">
-            <div class="addNoteIcon"><img src="./images/icons/IconAddNote.png" alt="Add OKR"></div>
+            <div class="center-spacing"><img src="./images/logos/LogoPurple.png" alt="Add OKR" class="addNoteIcon"></div>
         </a>
     </div>
-    <div class="homeLinks">   
-        <a href="/whatareokrs">What are OKRs?</a>
-        <a href="/bestpractices">OKR Best Practices</a>
+    <div class="center-spacing">   
+        <a href="/whatareokrs" class="homeLinks, button-link">What are OKRs?</a>
+    </div>
+    <div class="center-spacing"> 
+        <a href="/bestpractices" class="homeLinks, button-link">OKR Best Practices</a>
     </div>
 <% } %>
 

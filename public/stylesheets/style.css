@@ -4,6 +4,16 @@
     color: #ffffff;
 }
 
+.logged-out {
+  background-color: #2a187d;
+  color: #ffffff;
+}
+
+.logged-in {
+  background-color: #ffffff;
+  color: #2a187d;
+}
+
 #landingLogo {
   width: 30%;
 }
@@ -20,6 +30,10 @@ nav {
   width: 50px;
   object-fit: contain;
   /* margin-right: auto; */
+}
+
+#logoutLogo {
+  padding-right: 30px;
 }
 
 nav > h1 {
@@ -81,8 +95,27 @@ nav > a.active {
     }
 }
 
+.button-link {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding to your preference */
+  background-color: #2a187d; /* Set the background color of the button */
+  color: white; /* Set the text color of the button */
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px; /* Optional: Add rounded corners */
+  cursor: pointer;
+  font-size: 16px; /* Set the font size of the button text */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.button-link:hover {
+  color: #2A187D;
+  background-color: #C9C3DF;
+}
+
 main {
-  background-color: #2a187d;
+  background-color: #ffffff;
 }
 
 body {
@@ -104,20 +137,43 @@ body > nav {
   padding: 0 20px 0 30px;
 }
 
-body > main {
-  grid-area: main;
-  display: flex;
+main {
+  display: grid;
+  /* grid-area: main;
   flex-direction: column;
   align-items: center;
   /* background-color: #ffffff; */
   padding: 20px;
-  overflow-y: scroll;
-}
+  overflow-y: scroll; */
+} */
 
 body > main h1:first-child {
   margin-bottom: 50px;
 }
 
+.center-spacing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-icons {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+}
+
+.addOkrIcon,
+.addNoteIcon {
+  width: 30%;
+}
+
+.homeLinks {
+  color: #2a187d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 #new-form {
   display: grid;

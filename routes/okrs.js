@@ -3,6 +3,9 @@ const router = express.Router();
 const okrsCtrl = require('../controllers/okrs');
 const ensureLoggedIn = require('../config/ensureLoggedIn');
 
+// Get /okrs/new (see "Add an OKR" page)
+router.get('/', ensureLoggedIn, okrsCtrl.index);
+
 // // GET /okrs (see all OKRs)
 // router.get('/', ensureLoggedIn, okrsCtrl.index);
 // // GET /okrs/:okrsId (see detail page of a specific OKR)
@@ -16,4 +19,4 @@ const ensureLoggedIn = require('../config/ensureLoggedIn');
 // // PUT /okrs/:okrsId (update an OKR)
 // router.put('/:okrId', ensureLoggedIn, okrsCtrl.update);
 	
-// module.exports = router;
+module.exports = router;

@@ -5,7 +5,8 @@ const Okr = require('../models/okr');
 const Note = require('../models/note');
 
 module.exports = {
-  index
+  index,
+  // addOkr,
 }
 
 function index(req, res) {
@@ -14,7 +15,17 @@ function index(req, res) {
   });
 }
 
-// render the "Add Okr" icon/link on screen & be able to redirect to "Add OKR" page
+// async function index(req, res) {
+//   const okrs = await Okr.find({});
+//   res.render('okrs/new', { title: 'Add an Okr', okrs });
+// }
+
+// // redirect to "Add OKR" page by clicking on the "Add OKR icon"
+// function addOkr(req, res) {
+//   res.render("okrs/new", {
+//     title: "Add an OKR"
+//   });
+// }
 
 // render the "Add Note" icon/link & be able & be able to redirect to "Add Note" page
 

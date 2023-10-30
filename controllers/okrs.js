@@ -26,23 +26,23 @@ async function index(req, res) {
 // Button to "Add to OKR List" (that adds OKR to list and redirects to "With OKRs" view)
 
 // renders error message if okr not created
-function errorOkr(req, res) {
-    res.redirect('okrs/new', { title: 'Add an OKR', errorMsg: '' });
-}
+// function errorOkr(req, res) {
+//     res.redirect('okrs/new', { title: 'Add an OKR', errorMsg: '' });
+// }
 
 // physically creates the OKR in the system
-async function create(req, res) {
-    try {
-      // get id of new okr
-      const okr = await Okr.create(req.body);
-      // Redirect to the new okr's detail page
-      res.redirect(`/okrs/${okrs._id}`);
-    } catch (err) {
-      // Validation error
-      console.log(err);
-      res.render('movies/new', { errorMsg: err.message });
-    }
-  }
+// async function create(req, res) {
+//     try {
+//       // get id of new okr
+//       const okr = await Okr.create(req.body);
+//       // Redirect to the new okr's detail page
+//       res.redirect(`/okrs/${okrs._id}`);
+//     } catch (err) {
+//       // Validation error
+//       console.log(err);
+//       res.render('movies/new', { errorMsg: err.message });
+//     }
+//   }
 
 // render "No OKRs" view of OKR page, includes:
 // Static text with "You haven't set any OKRs yet"
@@ -54,18 +54,18 @@ async function create(req, res) {
 // Middle column: Date (Top Line is the EOQ date, with 3 bottom lines the Key Results' due dates)
 // Right column: Percentage progress (Top Line is the Objective's calculated percentage from average of bottom 3 lines)
 
-function show(req, res) {
-    //find data
-    Okr.findOne({
-      'okrs._id': req.params.id,
-      'okrs.user': req.user._id
-    })
-    .then(function(okr) {
-      if (!okr) return res.redirect('/okrs');
-      const okrToUpdate = okr.find(okr => okr._id.toString() === req.params.id);
-      res.render('okrs/:okrId', {title: 'Update OKR', okrToUpdate});
-    })
-}
+// function show(req, res) {
+//     //find data
+//     Okr.findOne({
+//       'okrs._id': req.params.id,
+//       'okrs.user': req.user._id
+//     })
+//     .then(function(okr) {
+//       if (!okr) return res.redirect('/okrs');
+//       const okrToUpdate = okr.find(okr => okr._id.toString() === req.params.id);
+//       res.render('okrs/:okrId', {title: 'Update OKR', okrToUpdate});
+//     })
+// }
 
 
 // Below table, if no notes yet, render "No Notes" view, includes:
@@ -99,36 +99,36 @@ function show(req, res) {
 
 
 // updates OKR when "Save updated OKR" button is pressed
-function updateOkr(req, res, next) {
-    // Note the cool "dot" syntax to query for a movie with a review nested within the array
-    Okr.findOne({
-      'okrs._id': req.params.id,
-      'okrs.user': req.user._id
-    }).then(function(okr) {
-      if (!okr) return res.redirect('/okrs');
-      const okrToUpdate = okr.okrs.find(okr => okr._id.toString() === req.params.id);
-      if (!okrToUpdate) return res.redirect('/okrs');
-      okrToUpdate.content = req.body.content;
-      okr.save().then(function() {
-        res.redirect('/okrs');
-      }).catch(function(err) {
-        return next(err);
-      });
-    });
-  }
+// function updateOkr(req, res, next) {
+//     // Note the cool "dot" syntax to query for a movie with a review nested within the array
+//     Okr.findOne({
+//       'okrs._id': req.params.id,
+//       'okrs.user': req.user._id
+//     }).then(function(okr) {
+//       if (!okr) return res.redirect('/okrs');
+//       const okrToUpdate = okr.okrs.find(okr => okr._id.toString() === req.params.id);
+//       if (!okrToUpdate) return res.redirect('/okrs');
+//       okrToUpdate.content = req.body.content;
+//       okr.save().then(function() {
+//         res.redirect('/okrs');
+//       }).catch(function(err) {
+//         return next(err);
+//       });
+//     });
+//   }
 
 // deletes an OKR when "Delete OKR" button is pressed
-function deleteOkr(req, res, next) {
-    Okr.findOne({
-      'okrs._id': req.params.id,
-      'okrs.user': req.user._id
-    }).then(function(movie) {
-      if (!okr) return res.redirect('/okrs');
-      okr.remove(req.params.id);
-      okr.save().then(function() {
-        res.redirect('/okrs');
-      }).catch(function(err) {
-        return next(err);
-      });
-    });
-}
+// function deleteOkr(req, res, next) {
+//     Okr.findOne({
+//       'okrs._id': req.params.id,
+//       'okrs.user': req.user._id
+//     }).then(function(movie) {
+//       if (!okr) return res.redirect('/okrs');
+//       okr.remove(req.params.id);
+//       okr.save().then(function() {
+//         res.redirect('/okrs');
+//       }).catch(function(err) {
+//         return next(err);
+//       });
+//     });
+// }
