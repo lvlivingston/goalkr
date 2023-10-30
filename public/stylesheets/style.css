@@ -179,12 +179,9 @@ main {
   overflow-y: scroll; */
 } */
 
-body > main h1:first-child {
-  margin-bottom: 50px;
-}
-
 .center-spacing {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -197,7 +194,7 @@ body > main h1:first-child {
 
 .addOkrIcon,
 .addNoteIcon {
-  width: 30%;
+  width: 50%;
 }
 
 .homeLinks {
