@@ -1,16 +1,23 @@
-// do i need this page at all??
-
 const User = require('../models/user');
 const Okr = require('../models/okr');
 const Note = require('../models/note');
 
 module.exports = {
-  index,
-  // addOkr,
+  // add exports here i.e. index, show, newOkr, create, delete
+      home,
+      index, 
+      // errorOkr,
+      // create,
+      // show,
+      // delete: deleteOkr
+  };
+  
+async function home(req, res) {
+      res.render('home/index.ejs', { title: 'Homepage' });
 }
 
 function index(req, res) {
-  res.render("home/index", {
+  res.render("home/index.ejs", {
     title: "Homepage"
   });
 }
