@@ -203,13 +203,12 @@ body > main h1:first-child {
   align-items: center;
 }
 
-#new-form {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(2, minmax(auto, 22rem));
+#new-okr-form {
+  display: flex;
+  flex-direction: column;
 }
 
-#new-form *,
+#new-okr-form *,
 #add-review-form *,
 #add-performer-form * {
   font-size: 20px;
@@ -217,7 +216,7 @@ body > main h1:first-child {
   border-radius: 5px;
 }
 
-#new-form input[type="submit"] {
+#new-okr-form input[type="submit"] {
   grid-column: span 2;
   width: 10rem;
   margin-left: auto;

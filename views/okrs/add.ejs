@@ -1,4 +1,40 @@
 <%- include('../partials/header') %>
 
+<form id="new-okr-form" action="/okrs" method="POST">
+	<label class="purple-font">New Objective or Key Result:</label>
+	<input class="purple-font" type="text" name="okrText" placeholder="Write your OKR here">
+	<label class="purple-font">Choose OKR:</label>
+	<select class="purple-font" name="okrChoice">
+		<option value="Choose" selected>Make a choice</option>
+		<option value="objectiveOne">Objective One</option>
+		<option value="objectiveOneKeyResultOne">O1 - Key Result One</option>
+		<option value="objectiveOneKeyResultTwo">O1 - Key Result Two</option>
+		<option value="objectiveOneKeyResultThree">O1 - Key Result Three</option>
+		<option value="objectiveTwo">Objective Two</option>
+		<option value="objectiveTwoKeyResultOne">O2 - Key Result One</option>
+		<option value="objectiveTwoKeyResultTwo">O2 - Key Result Two</option>
+		<option value="objectiveTwoKeyResultThree">O2 - Key Result Three</option>
+		<option value="objectiveThree">Objective Three</option>
+		<option value="objectiveThreeKeyResultOne">O3 - Key Result One</option>
+		<option value="objectiveThreeKeyResultTwo">O3 - Key Result Two</option>
+		<option value="objectiveThreeKeyResultThree">O3 - Key Result Three</option>
+	</select>
+	<label class="purple-font">Choose Quarter and Year:</label>
+	<select class="purple-font" name="QuarterYearChoice">
+		<option value="Choose" selected>Make a choice</option>
+		<option value="Q423">Q4 2023</option>
+		<option value="Q124">Q1 2024</option>
+		<option value="Q224">Q2 2024</option>
+		<option value="Q324">Q3 2024</option>
+		<option value="Q424">Q4 2024</option>
+		<option value="Q125">Q1 2025</option>
+		<option value="Q225">Q2 2025</option>
+		<option value="Q325">Q3 2025</option>
+		<option value="Q425">Q4 2025</option>
+	</select>
+	<label class="purple-font">Due Date:</label>
+	<input class="purple-font" type="date" name="dueDate">
+	<input class="button-link" type="submit" value="Add OKR">
+</form>
 
 <%- include('../partials/footerDeep') %>
