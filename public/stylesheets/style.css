@@ -8,6 +8,10 @@
   color: #2a187d;
 }
 
+.red-font {
+  color: #7D2A18;
+}
+
 .purple-background {
   background-color: #2a187d;
 }
@@ -206,6 +210,7 @@ body > main h1:first-child {
 #new-okr-form {
   display: flex;
   flex-direction: column;
+  color: #2A187D;
 }
 
 #new-okr-form *,
