@@ -1,4 +1,4 @@
-<%- include('./partials/header') %>
+<%- include('../partials/header') %>
 
 <% if (!user) { %>
 	<p>please login to continue</p>
@@ -11,4 +11,4 @@
     </div>
 <% } %>
 
-<%- include('./partials/footer') %>
+<%- include('../partials/footer') %>

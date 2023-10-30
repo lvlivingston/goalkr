@@ -1,11 +1,9 @@
-<%- include('./partials/header') %>
+<%- include('../partials/header') %>
 
 <% if (!user) { %>
-    <a href="/">
-        <div class="homeLogo"><img src="./images/logos/LogoWhite.png" alt="White Bullseye"></div>
-    </a>
+    <img src="/images/logos/LogoWhite.png" id="landingLogo">
     <h1>Hit your target. Achieve Success.</h1>
-    <p>Please login to continue...</p>
+    <p>Please login with your Google account to continue...</p>
 <% } else { %>
     <div class="homeIcons">
         <a href="/okrs/new">
@@ -21,4 +19,4 @@
     </div>
 <% } %>
 
-<%- include('./partials/footer') %>
+<%- include('../partials/footer') %>

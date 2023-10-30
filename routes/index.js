@@ -29,7 +29,7 @@ router.get('/oauth2callback', passport.authenticate(
 ));
 
 // POST /users (add a user to database)
-router.post('/users', ensureLoggedIn, indexRouter.create);
+// router.post('/users', ensureLoggedIn, indexRouter.create);
 
 // OAuth logout route
 router.get('/logout', function(req, res){

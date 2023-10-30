@@ -65,9 +65,6 @@ function show(req, res) {
       const okrToUpdate = okr.find(okr => okr._id.toString() === req.params.id);
       res.render('okrs/:okrId', {title: 'Update OKR', okrToUpdate});
     })
-    else {
-
-    } 
 }
 
 

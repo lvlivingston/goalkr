@@ -12,14 +12,12 @@
 </head>
 <body>
   <nav>
-      <img src="/images/logos/LogoWhite.png" class="left-section">
-      <% if (user) { %>
-        <h1 class="left-section"><%= title %></h1>
-        <img src="<%= user.avatar %>" alt="<%= user.name %>'s avatar" class="right-section"/>
-        <a href="/logout" class="right-section">LOG OUT</a>
+    <% if (user) { %>
+          <img src="/images/logos/LogoWhite.png" id="navLogo">
+          <h1><%= title %></h1>
+          <a href="/logout">LOG OUT</a>
       <% } else { %>
-        <a href="/auth/google" class="login, right-section">LOG IN<img src="./images/icons/LoginOauth.png"></a>
+          <a href="/auth/google"><img src="./images/icons/LoginOauth.png" id="loginLogo"></a>
       <% } %>
   </nav>
   <main>
-    <!-- <h1><%= title %></h1> -->
