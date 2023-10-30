@@ -1,11 +1,17 @@
 <%- include('../partials/header') %>
 
 <% if (!user) { %>
-    <img src="/images/logos/LogoWhite.png" id="landingLogo">
-    <h1>Hit your target. Achieve Success.</h1>
-    <p>Please login with your Google account to continue.</p>
+    <div class="center-spacing">
+        <img src="/images/logos/LogoWhite.png" id="landingLogo">
+    </div>
+    <div class="center-spacing">
+        <h1>Hit your target. Achieve Success.</h1>
+    </div>
+    <div class="center-spacing">
+        <p>Please login with your Google account to continue.</p>
+    </div>
 <% } else { %>
-    <div class="home-icons, center-spacing">
+    <div class="home-icons center-spacing">
         <a href="/okrs/new">
             <div class="center-spacing"><img src="./images/logos/LogoPurple.png" alt="Add OKR" class="addOkrIcon">Add an OKR</div>
         </a>
@@ -14,10 +20,10 @@
         </a>
     </div>
     <div class="center-spacing">   
-        <a href="/whatareokrs" class="homeLinks, button-link">What are OKRs?</a>
+        <a href="/whatareokrs" class="homeLinks button-link">What are OKRs?</a>
     </div>
     <div class="center-spacing"> 
-        <a href="/bestpractices" class="homeLinks, button-link">OKR Best Practices</a>
+        <a href="/bestpractices" class="homeLinks button-link">OKR Best Practices</a>
     </div>
 <% } %>
 

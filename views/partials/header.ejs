@@ -10,14 +10,20 @@
 <link rel='stylesheet' href='/stylesheets/style.css' />
   <title><%= title %></title>
 </head>
-<body>
-  <nav>
-    <% if (user) { %>
-          <img src="/images/logos/LogoWhite.png" id="navLogo">
-          <h1><%= title %></h1>
-          <a href="/logout" id="logoutLogo">LOG OUT</a>
-      <% } else { %>
-          <a href="/auth/google"><img src="./images/icons/LoginOauth.png" id="loginLogo"></a>
-      <% } %>
-  </nav>
-  <main>
+<% if (user) { %>
+  <body>
+    <nav>
+      <img src="/images/logos/LogoWhite.png" id="navLogo">
+      <h1><%= title %></h1>
+      <a href="/logout" id="logoutLogo">LOG OUT</a>
+    </nav>  
+  <main>  
+<% } else { %>
+  <body class="logged-out">
+    <div class="login-button-spot">
+      <nav>
+        <a href="/auth/google"><img src="./images/icons/LoginOauth.png" id="loginLogo"></a>
+      </nav>
+    </div>
+  <main class="logged-out">
+<% } %>

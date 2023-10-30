@@ -8,6 +8,14 @@
   color: #2a187d;
 }
 
+.purple-background {
+  background-color: #2a187d;
+}
+
+.white-font {
+  color: #ffffff;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -15,6 +23,13 @@
 .logged-out {
   background-color: #2a187d;
   color: #ffffff;
+}
+
+main.logged-out {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logged-in {
@@ -42,6 +57,12 @@ nav {
 
 #logoutLogo {
   padding-right: 30px;
+}
+
+.login-button-spot {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 nav > h1 {
@@ -107,7 +128,7 @@ nav > a.active {
   display: inline-block;
   padding: 10px 20px; /* Adjust padding to your preference */
   background-color: #2a187d; /* Set the background color of the button */
-  color: white; /* Set the text color of the button */
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
   border: none;
@@ -177,7 +198,7 @@ body > main h1:first-child {
 }
 
 .homeLinks {
-  color: #2a187d;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
