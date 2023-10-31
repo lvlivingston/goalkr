@@ -11,7 +11,8 @@ module.exports = {
     create,
     viewDetails,
     deleteOkr,
-    // update,
+    showUpdate,
+    // update
 };
 
 async function indexOkr(req, res) {
@@ -80,33 +81,6 @@ async function viewDetails(req, res) {
     }
 }
 
-// function deleteOkr(req, res, next) {
-//     Okr.findOne({
-//       'okrs._id': req.params.id,
-//     }).then(function(okr) {
-//       okr.delete(req.params.id);
-//       okr.save().then(function() {
-//         res.redirect('/okrs/index.ejs');
-//       }).catch(function(err) {
-//         return next(err);
-//       });
-//     });
-//   }
-
-// async function deleteOkr(req, res) {
-//     console.log(deleteOkr);
-//     try {
-//       const okr = await Okr.delete(req.body);
-//       console.log(req.body);
-//       okr.save();
-//       res.status(200);
-//       res.redirect('/okrs');
-//     } catch (err) {
-//       console.log(err);
-//       res.render('okrs/index.ejs', { errorMsg: err.message });
-//     }
-// }
-
 async function deleteOkr(req, res, next) {
     console.log(deleteOkr);
     try {
@@ -124,6 +98,15 @@ async function deleteOkr(req, res, next) {
     }
 }
 
+function showUpdate(req, res) {
+    const okrId = req.params.id;
+    console.log(okrId);
+    const okrToUpdate = Okr.findByIdAndDelete(okrId);
+    console.log(okrToUpdate);
+    res.render('okrs/update.ejs', {title: 'Update your OKR', okrToUpdate});
+}
+
+
 // render "Add OKR" view, including:
 // Textbox to type in OKR (max 140 characters)
 // Dropdown to choose which Objective or Key Result (i.e. Objective 1 - Key Result 3) (Should have options disappear as they are filled)
@@ -132,22 +115,6 @@ async function deleteOkr(req, res, next) {
 // Progress not here, as automatically defaults to 0% to start (Option to update percentage in "Update OKR" page)
 // Button to "Add to OKR List" (that adds OKR to list and redirects to "With OKRs" view)
 
-// physically creates the OKR in the system
-// async function create(req, res) {
-//     try {
-//       // get id of new okr
-//       const okr = await Okr.create(req.body);
-//       // Redirect to the new okr's detail page
-//       res.redirect(`/okrs/${okrs._id}`);
-//     } catch (err) {
-//       // Validation error
-//       console.log(err);
-//       res.render('movies/new', { errorMsg: err.message });
-//     }
-//   }
-
-// render "No OKRs" view of OKR page, includes:
-// Static text with "You haven't set any OKRs yet"
 // "Add OKR" icon/link (that redirects to "Add OKR" page)
 
 // render "With OKRs" view of OKR page, includes:
@@ -155,19 +122,6 @@ async function deleteOkr(req, res, next) {
 // Left column : OKR (Top line is Objective, with 3 bottom lines the Key Results in descending order)
 // Middle column: Date (Top Line is the EOQ date, with 3 bottom lines the Key Results' due dates)
 // Right column: Percentage progress (Top Line is the Objective's calculated percentage from average of bottom 3 lines)
-
-// function show(req, res) {
-//     //find data
-//     Okr.findOne({
-//       'okrs._id': req.params.id,
-//       'okrs.user': req.user._id
-//     })
-//     .then(function(okr) {
-//       if (!okr) return res.redirect('/okrs');
-//       const okrToUpdate = okr.find(okr => okr._id.toString() === req.params.id);
-//       res.render('okrs/:okrId', {title: 'Update OKR', okrToUpdate});
-//     })
-// }
 
 
 // Below table, if no notes yet, render "No Notes" view, includes:
@@ -189,8 +143,6 @@ async function deleteOkr(req, res, next) {
 // Unclickable view of OKRs, Dates & Progress
 // Except remove "Time Period Title" and "Bubble Navigation" 
 // Include "Edit OKR" button that redirects to "Update OKR" page
-
-
 
 // render "Update OKR" view with almost similar view as "OKR detail page"
 // All OKRs, Dates & Progress fields are prefilled with current information & ready to manually change
@@ -218,19 +170,3 @@ async function deleteOkr(req, res, next) {
 //       });
 //     });
 //   }
-
-// deletes an OKR when "Delete OKR" button is pressed
-// function deleteOkr(req, res, next) {
-//     Okr.findOne({
-//       'okrs._id': req.params.id,
-//       'okrs.user': req.user._id
-//     }).then(function(movie) {
-//       if (!okr) return res.redirect('/okrs');
-//       okr.remove(req.params.id);
-//       okr.save().then(function() {
-//         res.redirect('/okrs');
-//       }).catch(function(err) {
-//         return next(err);
-//       });
-//     });
-// }

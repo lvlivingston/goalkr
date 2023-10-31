@@ -25,6 +25,8 @@
 	<form id="delete-form" action="/okrs/<%= data._id %>?_method=DELETE" method="POST">
         <input class="button-link" type="submit" value="Delete OKR">
     </form>
-	<!-- <button class="button-link" type="submit">Update OKR</button> -->
+	<form id="update-form" action="/okrs/<%= data._id %>?_method=UPDATE" method="PUT">
+        <input class="button-link" type="submit" value="Update OKR">
+    </form>
 </div>
 <%- include('../partials/footerDeep') %>
