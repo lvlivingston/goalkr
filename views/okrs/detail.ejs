@@ -1,14 +1,28 @@
 <%- include('../partials/header') %>
 
-<% if (!user) { %>
-	<p>please login to continue</p>
-<% } else { %>
-	<!-- <p>Welcome, <%= user.name %> <%= user.email %></p> -->
-	<% if (user.avatar) { %>
-		<!-- <img src="<%= user.avatar %>" alt="<%= user.name %>'s avatar" /> -->
-	<% } %>
-<% } %>
+<div><%= data.QuarterYearChoice %></div>
+<div>
+	Objective: <%= data.objective %><br/>
+	Date:<%= data.eoqDate %><br/>
+	Progress:0%<br/>
+</div>
+<div>
+	KR1: <%= data.keyResultOne %><br/>
+	Due Date: <%= data.dueDateOne %><br/>
+	Progress:0%<br/>
+</div>
+<div>
+	KR2: <%= data.keyResultTwo %><br/>
+	Due Date: <%= data.dueDateTwo %><br/>
+	Progress:0%<br/>
+</div>
+<div>
+	KR3: <%= data.keyResultThree %><br/>
+	Due Date: <%= data.dueDateThree %><br/>
+	Progress:0%<br/>
+</div>
+<div>
+	Delete Button & Edit Button will go here
+</div>
 
-
-
-<%- include('../partials/footer') %>
+<%- include('../partials/footerDeep') %>

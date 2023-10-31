@@ -14,18 +14,13 @@ router.get('/new', ensureLoggedIn, okrsCtrl.addNewOkrPage);
 // POST /okrs (add a new OKR)
 router.post('/', ensureLoggedIn, okrsCtrl.create);
 
+// GET /okrs/:okrsId (see detail page of a specific OKR)
+router.get('/:id', ensureLoggedIn, okrsCtrl.viewDetails);
 
-
-// // GET /okrs/:okrsId (see detail page of a specific OKR)
-// router.get('/:okrId', ensureLoggedIn, okrsCtrl.show);
-// // GET /okrs/:okrsId (see detail page of a specific OKR)
-// router.get('/notes', ensureLoggedIn, okrsCtrl.show);
-// // POST /okrs (add a new OKR)
-// router.post('/', ensureLoggedIn, okrsCtrl.create);
-// // DELETE /okrs/:okrsId (delete an OKR)
-// router.delete('/:okrId', ensureLoggedIn, okrsCtrl.delete);
 // // PUT /okrs/:okrsId (update an OKR)
 // router.put('/:okrId', ensureLoggedIn, okrsCtrl.update);
+// // DELETE /okrs/:okrsId (delete an OKR)
+// router.delete('/:okrId', ensureLoggedIn, okrsCtrl.delete);
 	
 module.exports = router;
 

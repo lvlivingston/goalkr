@@ -9,6 +9,7 @@ module.exports = {
     new: newOkr,
     fetchedOkrs,
     create,
+    viewDetails,
     // show,
     // delete: deleteOkr
 };
@@ -42,16 +43,40 @@ async function create(req, res) {
     for (let key in req.body) {
         if (req.body[key] === '') delete req.body[key];
     }
-    console.log(req.body);
     try {
       const okr = await Okr.create(req.body);
-      console.log(okr);
       okr.save();
       res.status(200);
       res.redirect('/okrs');
     } catch (err) {
       console.log(err);
       res.render('okrs/index.ejs', { errorMsg: err.message });
+    }
+}
+
+async function viewDetails(req, res) {
+    console.log(req.params);
+    try {
+        const okrId = req.params.id;
+        console.log(req.params.id);
+        const okr = await Okr.findById(okrId);
+        console.log("OKR Object:", okr);
+        const data = {
+            QuarterYearChoice: okr.QuarterYearChoice,
+            objective: okr.objective,
+            eoqDate: okr.eoqDate,
+            keyResultOne: okr.keyResultOne,
+            dueDateOne: okr.dueDateOne,
+            keyResultTwo: okr.keyResultTwo,
+            dueDateTwo: okr.dueDateTwo,
+            keyResultThree: okr.keyResultThree,
+            dueDateThree: okr.dueDateThree
+        };
+        console.log(data);
+        res.render('okrs/detail.ejs', { title: 'OKR Details', data });
+    } catch (err) {
+        console.log(err);
+        res.render('okrs/index.ejs', { errorMsg: err.message });
     }
 }
 
