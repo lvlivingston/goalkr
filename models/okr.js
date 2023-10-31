@@ -2,6 +2,16 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const okrSchema = new Schema({
+    QuarterYearChoice: {
+      type: String,
+      enum: ['Q4 2023', 'Q1 2024', 'Q2 2024', 'Q3 2024', 'Q4 2024'],
+      required: true
+    },
+    okrChoice: {
+      type: String,
+      enum: ['Objective One', 'Objective Two', 'Objective Three'],
+      required: true
+    },
     objective: {
       type: String,
       required: true
