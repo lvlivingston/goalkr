@@ -10,8 +10,8 @@ module.exports = {
     fetchedOkrs,
     create,
     viewDetails,
-    // show,
-    // delete: deleteOkr
+    deleteOkr,
+    // update,
 };
 
 async function indexOkr(req, res) {
@@ -55,12 +55,9 @@ async function create(req, res) {
 }
 
 async function viewDetails(req, res) {
-    console.log(req.params);
     try {
         const okrId = req.params.id;
-        console.log(req.params.id);
         const okr = await Okr.findById(okrId);
-        console.log("OKR Object:", okr);
         const data = {
             QuarterYearChoice: okr.QuarterYearChoice,
             objective: okr.objective,
@@ -75,11 +72,36 @@ async function viewDetails(req, res) {
             dueDateThree: okr.dueDateThree,
             keyResultThreeProgress: okr.keyResultThreeProgress,
         };
-        console.log(data);
         res.render('okrs/detail.ejs', { title: 'OKR Details', data });
     } catch (err) {
         console.log(err);
         res.render('okrs/index.ejs', { errorMsg: err.message });
+    }
+}
+
+// async function deleteOkr(req, res) {
+//     try {
+//       const okr = await Okr.remove(req.body);
+//       okr.save();
+//       res.status(200);
+//       res.redirect('/okrs');
+//     } catch (err) {
+//       console.log(err);
+//       res.render('okrs/index.ejs', { errorMsg: err.message });
+//     }
+// }
+
+async function deleteOkr(req, res, next) {
+    try {
+        const okrId = req.params.id;
+        const deletedOkr = await Okr.findByIdAndDelete(okrId);
+        if (!deletedOkr) {
+            return res.status(404).send('OKR not found');
+        }
+        res.redirect('/okrs'); // Redirect to the OKR list page after successful deletion
+    } catch (err) {
+        console.log(err);
+        res.status(500).render('okrs/index.ejs', { errorMsg: err.message });
     }
 }
 

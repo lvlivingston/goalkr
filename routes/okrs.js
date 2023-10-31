@@ -17,10 +17,11 @@ router.post('/', ensureLoggedIn, okrsCtrl.create);
 // GET /okrs/:okrsId (see detail page of a specific OKR)
 router.get('/:id', ensureLoggedIn, okrsCtrl.viewDetails);
 
+// DELETE /okrs/:okrsId (delete an OKR)
+router.delete('/:id', ensureLoggedIn, okrsCtrl.deleteOkr);
+
 // // PUT /okrs/:okrsId (update an OKR)
 // router.put('/:okrId', ensureLoggedIn, okrsCtrl.update);
-// // DELETE /okrs/:okrsId (delete an OKR)
-// router.delete('/:okrId', ensureLoggedIn, okrsCtrl.delete);
 	
 module.exports = router;
 
