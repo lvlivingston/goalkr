@@ -6,9 +6,9 @@ module.exports = {
 // add exports here i.e. index, show, newOkr, create, delete
     indexNote,
     addNewNotePage, 
-    // new: newNote,   
+    new: newNote,   
     // errorOkr,
-    // create,
+    create,
     // show,
     // delete: deleteOkr
 };
@@ -21,6 +21,25 @@ async function indexNote(req, res) {
 
 async function addNewNotePage(req, res) {
   res.render('notes/add.ejs', { title: 'Add a Note' });
+}
+
+function newNote(req, res) {
+  res.render('notes/new', { title: 'Add a Note', errorMsg: '' });
+}
+
+async function create(req, res) {
+  for (let key in req.body) {
+      if (req.body[key] === '') delete req.body[key];
+  }
+  try {
+    const note = await Note.create(req.body);
+    note.save();
+    res.status(200);
+    res.redirect('/notes');
+  } catch (err) {
+    console.log(err);
+    res.render('notes/index.ejs', { errorMsg: err.message });
+  }
 }
 
 // async function newNote(req,res) {

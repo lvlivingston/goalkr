@@ -1,22 +1,14 @@
 <%- include('../partials/header') %>
 
 <% if (notes.length) { %>
-	<table>
-		<thead>
-			<tr>
-				<th>Date</th>
-				<th>Note</th>
-				<th>OKR</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><%= n.addDate.toLocaleDateString() %></td>
-				<td><%= n.noteText %></td>
-				<td><%= n.okrChoice %></td>
-			</tr>
-		</tbody>
-	</table>
+	<% notes.forEach(function(n) { %>
+		<div>
+			Date:<%= n.logDate %>
+			Note: <%= n.noteText %>
+			OKR: <%= n.objective %>
+			Timeperiod: <%= n.QuarterYearChoice %><br/>
+		</div>
+	<% }) %>
 <% } else { %>
 <h5>You haven't taken any notes yet.</h5>
 <% } %>
