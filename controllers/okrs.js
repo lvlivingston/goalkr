@@ -59,6 +59,7 @@ async function viewDetails(req, res) {
         const okrId = req.params.id;
         const okr = await Okr.findById(okrId);
         const data = {
+            _id: okr._id,
             QuarterYearChoice: okr.QuarterYearChoice,
             objective: okr.objective,
             eoqDate: okr.eoqDate,
@@ -79,9 +80,24 @@ async function viewDetails(req, res) {
     }
 }
 
+// function deleteOkr(req, res, next) {
+//     Okr.findOne({
+//       'okrs._id': req.params.id,
+//     }).then(function(okr) {
+//       okr.delete(req.params.id);
+//       okr.save().then(function() {
+//         res.redirect('/okrs/index.ejs');
+//       }).catch(function(err) {
+//         return next(err);
+//       });
+//     });
+//   }
+
 // async function deleteOkr(req, res) {
+//     console.log(deleteOkr);
 //     try {
-//       const okr = await Okr.remove(req.body);
+//       const okr = await Okr.delete(req.body);
+//       console.log(req.body);
 //       okr.save();
 //       res.status(200);
 //       res.redirect('/okrs');
@@ -92,9 +108,12 @@ async function viewDetails(req, res) {
 // }
 
 async function deleteOkr(req, res, next) {
+    console.log(deleteOkr);
     try {
         const okrId = req.params.id;
+        console.log(okrId);
         const deletedOkr = await Okr.findByIdAndDelete(okrId);
+        console.log(deletedOkr);
         if (!deletedOkr) {
             return res.status(404).send('OKR not found');
         }

@@ -22,8 +22,9 @@
 	Progress: <%= data.keyResultThreeProgress %>%<br/>
 </div>
 <div>
-	<button class="button-link" type="submit">Delete OKR</button>
-	<button class="button-link" type="submit">Update OKR</button>
+	<form id="delete-form" action="/okrs/<%= data._id %>?_method=DELETE" method="POST">
+        <input class="button-link" type="submit" value="Delete OKR">
+    </form>
+	<!-- <button class="button-link" type="submit">Update OKR</button> -->
 </div>
-
 <%- include('../partials/footerDeep') %>
