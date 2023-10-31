@@ -7,6 +7,7 @@ module.exports = {
     indexOkr,
     addNewOkrPage,    
     new: newOkr,
+    fetchedOkrs,
     create,
     // show,
     // delete: deleteOkr
@@ -19,11 +20,22 @@ async function indexOkr(req, res) {
 }
 
 async function addNewOkrPage(req, res) {
-    res.render('okrs/add.ejs', { title: 'Add an OKR' });
+    try {
+        const okrs = await Okr.find({});
+        res.render('okrs/add.ejs', { title: 'Add an OKR', okrs: okrs });
+    } catch (err) {
+        // Handle errors, e.g., render an error page
+        res.render('error', { error: err });
+    }
 }
 
 function newOkr(req, res) {
     res.render('okrs/new', { title: 'Add an OKR', errorMsg: '' });
+}
+
+async function fetchedOkrs(req, res) {
+    const okrs = await Okr.find({});
+    res.render('okrs/add', { okrs: okrs });
 }
 
 async function create(req, res) {
@@ -32,12 +44,10 @@ async function create(req, res) {
     }
     console.log(req.body);
     try {
-      // Update this line because now we need the _id of the new okr
       const okr = await Okr.create(req.body);
       console.log(okr);
       okr.save();
       res.status(200);
-      // Redirect to the all okr page
       res.redirect('/okrs');
     } catch (err) {
       console.log(err);

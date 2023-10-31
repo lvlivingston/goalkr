@@ -2,15 +2,34 @@
 
 <% if (okrs.length) { %>
 	<% okrs.forEach(function(i) { %>
-		<div><%= i.objective %></div>
-		<div><%= i.eoqDate %></div>
-		<div><%= i.keyResultOne %></div>
-		<div><%= i.dueDateOne %></div>
-		<div><%= i.keyResultTwo %></div>
-		<div><%= i.dueDateTwo %></div>
-		<div><%= i.keyResultThree %></div>
-		<div><%= i.dueDateThree %></div>
 		<div><%= i.QuarterYearChoice %></div>
+		<div>
+			Objective: <%= i.objective %><br/>
+			Date:<%= i.eoqDate %><br/>
+			Progress:0%<br/>
+			<button>Edit Objective</button>
+		</div>
+		<div>
+			KR1: <%= i.keyResultOne %><br/>
+			Due Date: <%= i.dueDateOne %><br/>
+			Progress:0%<br/>
+			<button>Edit Key Result One</button>
+		</div>
+		<div>
+			KR2: <%= i.keyResultTwo %><br/>
+			Due Date: <%= i.dueDateTwo %><br/>
+			Progress:0%<br/>
+			<button>Edit Key Result Two</button>
+		</div>
+		<div>
+			KR3: <%= i.keyResultThree %><br/>
+			Due Date: <%= i.dueDateThree %><br/>
+			Progress:0%<br/>
+			<button>Edit Key Result Three</button>
+		</div>
+		<div>
+			Notes go here...
+		</div>
 	<% }) %>
 <% } else { %>
 <h5>You haven't set any OKRs yet.</h5>

@@ -30,6 +30,7 @@ main.logged-out {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5%;
 }
 
 .logged-in {
@@ -105,7 +106,8 @@ nav > a.active {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
+  padding-top: 5%;
 }
 
 .nav-icon {

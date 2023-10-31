@@ -6,19 +6,7 @@ const okrSchema = new Schema({
       type: String,
       required: true
     },
-    keyResultOne: {
-      type: String,
-      required: true
-    },
-    keyResultTwo: {
-      type: String,
-      required: true
-    },
-    keyResultThree: {
-      type: String,
-      required: true
-    },
-    dueDate: {
+    eoqDate: {
       //may need to change type to date
       type: Date,
       default: function() {
@@ -26,7 +14,61 @@ const okrSchema = new Schema({
       },
       min: Date(),
     },
-    progress: {
+    objectiveProgress: {
+      type: Number,
+      default: 0,
+      min: 0,
+      max: 100,
+    },
+    keyResultOne: {
+      type: String,
+      required: true
+    },
+    dueDateOne: {
+      //may need to change type to date
+      type: Date,
+      default: function() {
+        return new Date();
+      },
+      min: Date(),
+    },
+    keyResultOneProgress: {
+      type: Number,
+      default: 0,
+      min: 0,
+      max: 100,
+    },
+    keyResultTwo: {
+      type: String,
+      required: true
+    },
+    dueDateTwo: {
+      //may need to change type to date
+      type: Date,
+      default: function() {
+        return new Date();
+      },
+      min: Date(),
+    },
+    keyResultTwoProgress: {
+      type: Number,
+      default: 0,
+      min: 0,
+      max: 100,
+    },
+    keyResultThree: {
+      type: String,
+      required: true
+    },
+    dueDateThree: {
+      //may need to change type to date
+      type: Date,
+      default: function() {
+        return new Date();
+      },
+      min: Date(),
+    },
+    keyResultThreeProgress: {
       type: Number,
       default: 0,
       min: 0,

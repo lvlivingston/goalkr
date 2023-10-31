@@ -1,32 +1,36 @@
 <%- include('../partials/header') %>
 
-<form id="new-okr-form" action="/okrs" method="POST">
-	<label>What is your BHAG Objective?</label>
-	<input type="text" name="objective" placeholder="Write your qualitative objective here">
-	<label>Completion Date (Typically this is EOQ):</label>
-	<input class="red-font" type="date" name="eoqDate">
-	<label>Key Result One:</label>
-	<input type="text" name="keyResultOne" placeholder="Write your first quantitative key result here">
-	<label>What date will you be finished with Key Result One?:</label>
-	<input class="red-font" type="date" name="dueDateOne">
-	<label>Key Result Two:</label>
-	<input type="text" name="keyResultTwo" placeholder="Write your second quantitative key result here">
-	<label>What date will you be finished with Key Result Two?:</label>
-	<input class="red-font" type="date" name="dueDateTwo">
-	<label>Key Result Three:</label>
-	<input type="text" name="keyResultThree" placeholder="Write your third quantitative key result here">
-	<label>What date will you be finished with Key Result Three?:</label>
-	<input class="red-font" type="date" name="dueDateThree">
-	<label>Which Quarter & Year are we setting goals for?</label>
-	<select class="red-font" name="QuarterYearChoice">
-		<option value="Choose" selected>Make a choice</option>
-		<option value="Q423">Q4 2023</option>
-		<option value="Q124">Q1 2024</option>
-		<option value="Q224">Q2 2024</option>
-		<option value="Q324">Q3 2024</option>
-		<option value="Q424">Q4 2024</option>
-	</select>
-	<input class="button-link" type="submit" value="Add OKR">
-</form>
+<% if (okrs.length < 3) { %>
+	<form id="new-okr-form" action="/okrs" method="POST">
+		<label>What is your BHAG Objective?</label>
+		<input type="text" name="objective" placeholder="Write your qualitative objective here">
+		<label>Completion Date (Typically this is EOQ):</label>
+		<input class="red-font" type="date" name="eoqDate">
+		<label>Key Result One:</label>
+		<input type="text" name="keyResultOne" placeholder="Write your first quantitative key result here">
+		<label>What date will you be finished with Key Result One?:</label>
+		<input class="red-font" type="date" name="dueDateOne">
+		<label>Key Result Two:</label>
+		<input type="text" name="keyResultTwo" placeholder="Write your second quantitative key result here">
+		<label>What date will you be finished with Key Result Two?:</label>
+		<input class="red-font" type="date" name="dueDateTwo">
+		<label>Key Result Three:</label>
+		<input type="text" name="keyResultThree" placeholder="Write your third quantitative key result here">
+		<label>What date will you be finished with Key Result Three?:</label>
+		<input class="red-font" type="date" name="dueDateThree">
+		<label>Which Quarter & Year are we setting goals for?</label>
+		<select class="red-font" name="QuarterYearChoice">
+			<option value="Choose" selected>Make a choice</option>
+			<option value="Q423">Q4 2023</option>
+			<option value="Q124">Q1 2024</option>
+			<option value="Q224">Q2 2024</option>
+			<option value="Q324">Q3 2024</option>
+			<option value="Q424">Q4 2024</option>
+		</select>
+		<input class="button-link" type="submit" value="Add OKR">
+	</form>
+<% } else { %>
+	<h5>You already set your OKRs for this quarter.</h5>
+<% } %>
 
 <%- include('../partials/footerDeep') %>
