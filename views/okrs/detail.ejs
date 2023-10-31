@@ -4,25 +4,26 @@
 <div>
 	Objective: <%= data.objective %><br/>
 	Date:<%= data.eoqDate %><br/>
-	Progress:0%<br/>
+	Progress: 0%<br/>
 </div>
 <div>
 	KR1: <%= data.keyResultOne %><br/>
 	Due Date: <%= data.dueDateOne %><br/>
-	Progress:0%<br/>
+	Progress: <%= data.keyResultOneProgress %>%<br/>
 </div>
 <div>
 	KR2: <%= data.keyResultTwo %><br/>
 	Due Date: <%= data.dueDateTwo %><br/>
-	Progress:0%<br/>
+	Progress: <%= data.keyResultTwoProgress %>%<br/>
 </div>
 <div>
 	KR3: <%= data.keyResultThree %><br/>
 	Due Date: <%= data.dueDateThree %><br/>
-	Progress:0%<br/>
+	Progress: <%= data.keyResultThreeProgress %>%<br/>
 </div>
 <div>
-	Delete Button & Edit Button will go here
+	<button>Delete OKR</button>
+	<button>Update OKR</button>
 </div>
 
 <%- include('../partials/footerDeep') %>

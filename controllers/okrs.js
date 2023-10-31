@@ -67,10 +67,13 @@ async function viewDetails(req, res) {
             eoqDate: okr.eoqDate,
             keyResultOne: okr.keyResultOne,
             dueDateOne: okr.dueDateOne,
+            keyResultOneProgress: okr.keyResultOneProgress,
             keyResultTwo: okr.keyResultTwo,
             dueDateTwo: okr.dueDateTwo,
+            keyResultTwoProgress: okr.keyResultTwoProgress,
             keyResultThree: okr.keyResultThree,
-            dueDateThree: okr.dueDateThree
+            dueDateThree: okr.dueDateThree,
+            keyResultThreeProgress: okr.keyResultThreeProgress,
         };
         console.log(data);
         res.render('okrs/detail.ejs', { title: 'OKR Details', data });

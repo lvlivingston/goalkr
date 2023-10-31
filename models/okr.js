@@ -83,4 +83,10 @@ const okrSchema = new Schema({
 timestamps: true
 });
 
+okrSchema.pre('save', function (next) {
+  const averageProgress = (this.keyResultOneProgress + this.keyResultTwoProgress + this.keyResultThreeProgress) / 3;
+  this.objectiveProgress = averageProgress;
+  next();
+});
+
 module.exports = mongoose.model('Okr', okrSchema);
