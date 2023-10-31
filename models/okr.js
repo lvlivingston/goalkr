@@ -4,12 +4,7 @@ const Schema = mongoose.Schema;
 const okrSchema = new Schema({
     QuarterYearChoice: {
       type: String,
-      enum: ['Q4 2023', 'Q1 2024', 'Q2 2024', 'Q3 2024', 'Q4 2024'],
-      required: true
-    },
-    okrChoice: {
-      type: String,
-      enum: ['Objective One', 'Objective Two', 'Objective Three'],
+      enum: ['Q423', 'Q124', 'Q224', 'Q324', 'Q424'],
       required: true
     },
     objective: {
