@@ -1,35 +1,19 @@
 <%- include('../partials/header') %>
 
 <% if (okrs.length) { %>
-	<h2> <%= timeperiod %></h2>
-	<table>
-		<thead>
-			<tr>
-				<th><%= objective %></th>
-				<th><%= endOfQuarterDate %></th>
-				<th><%= calculatedPercentage %></th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><%= KeyResultOne %></td>
-				<td><%= KeyResultTwo %></td>
-				<td><%= KeyResultThree %></td>
-			</tr>
-			<tr>
-				<td><%= keyResultOneDueDate %></td>
-				<td><%= keyResultTwoDueDate %></td>
-				<td><%= keyResultThreeDueDate %></td>
-			</tr>
-			<tr>
-				<td><%= keyResultOnePercentage %></td>
-				<td><%= keyResultTwoPercentage %></td>
-				<td><%= keyResultThreePercentage %></td>
-			</tr>
-		</tbody>
-	</table>
+	<% okrs.forEach(function(i) { %>
+		<div><%= i.objective %></div>
+		<div><%= i.eoqDate %></div>
+		<div><%= i.keyResultOne %></div>
+		<div><%= i.dueDateOne %></div>
+		<div><%= i.keyResultTwo %></div>
+		<div><%= i.dueDateTwo %></div>
+		<div><%= i.keyResultThree %></div>
+		<div><%= i.dueDateThree %></div>
+		<div><%= i.QuarterYearChoice %></div>
+	<% }) %>
 <% } else { %>
-<h5 class="purple-font">You haven't set any OKRs yet.</h5>
+<h5>You haven't set any OKRs yet.</h5>
 <% } %>
 
 <%- include('../partials/footer') %>

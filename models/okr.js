@@ -19,9 +19,10 @@ const okrSchema = new Schema({
       required: true
     },
     dueDate: {
-      type: Number,
+      //may need to change type to date
+      type: Date,
       default: function() {
-        return new Date().getFullYear();  
+        return new Date();
       },
       min: Date(),
     },

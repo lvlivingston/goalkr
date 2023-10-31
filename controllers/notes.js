@@ -5,7 +5,8 @@ const Note = require('../models/note');
 module.exports = {
 // add exports here i.e. index, show, newOkr, create, delete
     indexNote,
-    addNewNotePage,    
+    addNewNotePage, 
+    // new: newNote,   
     // errorOkr,
     // create,
     // show,
@@ -21,6 +22,20 @@ async function indexNote(req, res) {
 async function addNewNotePage(req, res) {
   res.render('notes/add.ejs', { title: 'Add a Note' });
 }
+
+// async function newNote(req,res) {
+//   for (let key in req.body) {
+//     if (req.body[key] === '') delete req.body[key];
+//   }
+//   try {
+//     const note = await Note.create(req.body);
+//     res.redirect('notes');
+//   } catch (err) {
+//     console.log(err);
+//     res.render('notes', { errorMsg: err.message });
+//   }
+// }
+
 
 // render "Add Note" view, including:
 // Textbox to type in Note (max 500 characters)

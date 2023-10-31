@@ -6,8 +6,8 @@ module.exports = {
 // add exports here i.e. index, show, newOkr, create, delete
     indexOkr,
     addNewOkrPage,    
-    // errorOkr,
-    // create,
+    new: newOkr,
+    create,
     // show,
     // delete: deleteOkr
 };
@@ -22,6 +22,29 @@ async function addNewOkrPage(req, res) {
     res.render('okrs/add.ejs', { title: 'Add an OKR' });
 }
 
+function newOkr(req, res) {
+    res.render('okrs/new', { title: 'Add an OKR', errorMsg: '' });
+}
+
+async function create(req, res) {
+    for (let key in req.body) {
+        if (req.body[key] === '') delete req.body[key];
+    }
+    console.log(req.body);
+    try {
+      // Update this line because now we need the _id of the new okr
+      const okr = await Okr.create(req.body);
+      console.log(okr);
+      okr.save();
+      res.status(200);
+      // Redirect to the all okr page
+      res.redirect('/okrs');
+    } catch (err) {
+      console.log(err);
+      res.render('okrs/index.ejs', { errorMsg: err.message });
+    }
+}
+
 // render "Add OKR" view, including:
 // Textbox to type in OKR (max 140 characters)
 // Dropdown to choose which Objective or Key Result (i.e. Objective 1 - Key Result 3) (Should have options disappear as they are filled)
@@ -29,11 +52,6 @@ async function addNewOkrPage(req, res) {
 // Calendar to add Due Date
 // Progress not here, as automatically defaults to 0% to start (Option to update percentage in "Update OKR" page)
 // Button to "Add to OKR List" (that adds OKR to list and redirects to "With OKRs" view)
-
-// renders error message if okr not created
-// function errorOkr(req, res) {
-//     res.redirect('okrs/new', { title: 'Add an OKR', errorMsg: '' });
-// }
 
 // physically creates the OKR in the system
 // async function create(req, res) {

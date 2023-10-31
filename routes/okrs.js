@@ -11,6 +11,10 @@ router.get('/', ensureLoggedIn, okrsCtrl.indexOkr);
 // the /new is the URL
 router.get('/new', ensureLoggedIn, okrsCtrl.addNewOkrPage);
 
+// POST /okrs (add a new OKR)
+router.post('/', ensureLoggedIn, okrsCtrl.create);
+
+
 
 // // GET /okrs/:okrsId (see detail page of a specific OKR)
 // router.get('/:okrId', ensureLoggedIn, okrsCtrl.show);
@@ -24,3 +28,4 @@ router.get('/new', ensureLoggedIn, okrsCtrl.addNewOkrPage);
 // router.put('/:okrId', ensureLoggedIn, okrsCtrl.update);
 	
 module.exports = router;
+
