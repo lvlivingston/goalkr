@@ -26,7 +26,6 @@ async function addNewOkrPage(req, res) {
         const okrs = await Okr.find({});
         res.render('okrs/add.ejs', { title: 'Add an OKR', okrs: okrs });
     } catch (err) {
-        // Handle errors, e.g., render an error page
         res.render('error', { error: err });
     }
 }
@@ -59,6 +58,7 @@ async function viewDetails(req, res) {
     try {
         const okrId = req.params.id;
         const okr = await Okr.findById(okrId);
+        const notes = await Note.find({ okrId: okrId });
         const data = {
             _id: okr._id,
             QuarterYearChoice: okr.QuarterYearChoice,
@@ -74,8 +74,7 @@ async function viewDetails(req, res) {
             dueDateThree: okr.dueDateThree,
             keyResultThreeProgress: okr.keyResultThreeProgress,
         };
-        // const notes = await Note.find({ okrId: data._id });
-        res.render('okrs/detail.ejs', { title: 'OKR Details', data });
+        res.render('okrs/detail.ejs', { title: 'OKR Details', data, notes });
     } catch (err) {
         console.log(err);
         res.render('okrs/index.ejs', { errorMsg: err.message });
