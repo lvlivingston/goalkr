@@ -50,10 +50,8 @@ nav {
 }
 
 #navLogo {
-  order: 1;
   width: 50px;
   object-fit: contain;
-  /* margin-right: auto; */
 }
 
 #logoutLogo {
@@ -67,14 +65,12 @@ nav {
 }
 
 nav > h1 {
-  order: 2;
   justify-content: flex-start;
   margin-right: auto;
 }
 
 nav > a {
   order: 3;
-  margin: 20px;
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
@@ -188,12 +184,13 @@ main {
 .home-icons {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
+  justify-content: center;
+  align-items: center;
 }
 
 .addOkrIcon,
 .addNoteIcon {
-  width: 50%;
+  width: 80%;
 }
 
 .homeLinks {

@@ -106,6 +106,20 @@ function showUpdate(req, res) {
     res.render('okrs/update.ejs', {title: 'Update your OKR', okrToUpdate});
 }
 
+// function updateOkr(req, res, next) {
+//       const okrToUpdate = okr.okrs.find(okr => okr._id.toString() === req.params.id);
+//       if (!okrToUpdate) return res.redirect('/okrs');
+//       okrToUpdate.content = req.body.content;
+//       okr.save().then(function() {
+//         res.redirect('/okrs');
+//       }).catch(function(err) {
+//         return next(err);
+//       });
+//   }
+
+
+
+
 
 // render "Add OKR" view, including:
 // Textbox to type in OKR (max 140 characters)
@@ -153,20 +167,3 @@ function showUpdate(req, res) {
 
 
 // updates OKR when "Save updated OKR" button is pressed
-// function updateOkr(req, res, next) {
-//     // Note the cool "dot" syntax to query for a movie with a review nested within the array
-//     Okr.findOne({
-//       'okrs._id': req.params.id,
-//       'okrs.user': req.user._id
-//     }).then(function(okr) {
-//       if (!okr) return res.redirect('/okrs');
-//       const okrToUpdate = okr.okrs.find(okr => okr._id.toString() === req.params.id);
-//       if (!okrToUpdate) return res.redirect('/okrs');
-//       okrToUpdate.content = req.body.content;
-//       okr.save().then(function() {
-//         res.redirect('/okrs');
-//       }).catch(function(err) {
-//         return next(err);
-//       });
-//     });
-//   }

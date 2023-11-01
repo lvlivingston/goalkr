@@ -9,6 +9,9 @@ router.get('/', ensureLoggedIn, notesCtrl.indexNote);
 // GET /notes/new (see "Add a Note" page)
 router.get('/new', ensureLoggedIn, notesCtrl.addNewNotePage);
 
+// GET /notes/new/:okrId (see "Add a Note" page)
+router.get('/new/:id', ensureLoggedIn, notesCtrl.addNewNotePage);
+
 // POST /notes/new (Add a new Note)
 router.post('/', ensureLoggedIn, notesCtrl.create);
 

@@ -6,7 +6,8 @@ module.exports = {
 // add exports here i.e. index, show, newOkr, create, delete
     indexNote,
     addNewNotePage, 
-    new: newNote,   
+    new: newNote,
+    // newNoteOnOkr,   
     // errorOkr,
     create,
     // show,
@@ -24,7 +25,7 @@ async function addNewNotePage(req, res) {
 }
 
 function newNote(req, res) {
-  res.render('notes/new', { title: 'Add a Note', errorMsg: '' });
+  res.render('notes/index.ejs', { title: 'Add a Note', errorMsg: '' });
 }
 
 async function create(req, res) {
