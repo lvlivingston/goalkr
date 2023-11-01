@@ -26,6 +26,7 @@ Short for [objectives and key results](https://www.forbes.com/advisor/business/w
 OKRs are the secret weapon consulting firms deploy at large organizations. Do the same with your life.
 
 **🎯 Hit your mark. Achieve success!**
+
 [Click Here to Check out the App Now](https://goalkr-94864ed83738.herokuapp.com)
 
 ---
