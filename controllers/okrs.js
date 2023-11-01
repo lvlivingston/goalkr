@@ -74,6 +74,7 @@ async function viewDetails(req, res) {
             dueDateThree: okr.dueDateThree,
             keyResultThreeProgress: okr.keyResultThreeProgress,
         };
+        // const notes = await Note.find({ okrId: data._id });
         res.render('okrs/detail.ejs', { title: 'OKR Details', data });
     } catch (err) {
         console.log(err);

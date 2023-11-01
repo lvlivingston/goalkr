@@ -31,6 +31,13 @@
     </form>
 </div>
 <div>
-	Notes go here...
+	<% if (notes.length) {
+		const matchingNote = notes.find(note => note.okrId.toString() === data._id.toString());
+		if (matchingNote) { %>
+			<% <p>Log Date: <%= matchingNote.logDate %></p>
+			<% <p>Note Text: <%= matchingNote.noteText %></p>
+		<% } else { %>
+			<h5>You haven't taken any notes yet.</h5>
+		<% }
 </div>
 <%- include('../partials/footerNote') %>
