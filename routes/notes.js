@@ -15,4 +15,7 @@ router.get('/new/:id', ensureLoggedIn, notesCtrl.addNewNotePage);
 // POST /notes/new (Add a new Note)
 router.post('/', ensureLoggedIn, notesCtrl.create);
 
+// POST /notes/new (Add a new Note)
+router.post('/new/:id', ensureLoggedIn, notesCtrl.create);
+
 module.exports = router;

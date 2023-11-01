@@ -21,7 +21,11 @@ async function indexNote(req, res) {
 }
 
 async function addNewNotePage(req, res) {
-  res.render('notes/add.ejs', { title: 'Add a Note' });
+  let okrId;
+  if (req.params.id) {
+    okrId = req.params.id
+  }
+  res.render('notes/add.ejs', { title: 'Add a Note', okrId });
 }
 
 function newNote(req, res) {
