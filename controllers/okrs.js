@@ -6,7 +6,7 @@ module.exports = {
 // add exports here i.e. index, show, newOkr, create, delete
     indexOkr,
     addNewOkrPage,    
-    new: newOkr,
+    // new: newOkr,
     fetchedOkrs,
     create,
     viewDetails,
@@ -30,9 +30,9 @@ async function addNewOkrPage(req, res) {
     }
 }
 
-function newOkr(req, res) {
-    res.render('okrs/new', { title: 'Add an OKR', errorMsg: '' });
-}
+// function newOkr(req, res) {
+//     res.render('okrs/new', { title: 'Add an OKR', errorMsg: '' });
+// }
 
 async function fetchedOkrs(req, res) {
     const okrs = await Okr.find({});

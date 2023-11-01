@@ -17,13 +17,11 @@
       <h1 class="white-font"><%= title %></h1>
       <a href="/logout" id="logoutLogo">LOG OUT</a>
     </nav>  
-  <main>  
+  <main class="logged-in">  
 <% } else { %>
   <body class="logged-out">
-    <div>
       <nav class="navLogOut">
         <a href="/auth/google" class="login-button-spot"><img src="./images/icons/LoginOauth.png" id="loginLogo"></a>
       </nav>
-    </div>
   <main class="logged-out">
 <% } %>

@@ -30,12 +30,16 @@ main.logged-out {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 5%;
+  /* padding-bottom: 5%; */
 }
 
 .logged-in {
   background-color: #ffffff;
   color: #2a187d;
+}
+
+main.logged-in {
+  padding-bottom: 70px;
 }
 
 #landingLogo {
@@ -91,8 +95,7 @@ nav > a.active {
   width: 25%;
 }
 
-/* bottom navigation bar css */
-.bottom-navbar {
+footer {
   /* grid-area: nav; */
   display: flex;
   flex-direction: row;
@@ -103,8 +106,8 @@ nav > a.active {
   position: fixed;
   bottom: 0;
   width: 100%;
-  /* padding: 20px; */
-  padding-top: 5%;
+  padding: 20px;
+  /* padding-top: 20px; */
 }
 
 .nav-icon {
@@ -141,10 +144,6 @@ nav > a.active {
   background-color: #C9C3DF;
 }
 
-main {
-  background-color: #ffffff;
-}
-
 body {
   margin: 0;
   height: 100vh;
@@ -153,9 +152,10 @@ body {
   grid-template-areas: 
     "nav"
     "main"
+    "footer"
 }
 
-body > nav {
+nav {
   grid-area: nav;
   background-color: #2a187d;
   display: flex;
@@ -165,14 +165,14 @@ body > nav {
 }
 
 main {
+  background-color: #ffffff;
   display: grid;
   /* grid-area: main;
   flex-direction: column;
   align-items: center;
-  /* background-color: #ffffff; */
-  padding: 20px;
+  padding-bottom: 20px;
   overflow-y: scroll; */
-} */
+}
 
 
 .center-spacing {
