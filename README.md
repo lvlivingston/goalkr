@@ -2,7 +2,7 @@
 
 A web application created by Leah Livingston
 
-[Click Here to Check out the App](https://goalkr-94864ed83738.herokuapp.com)
+[Click Here to Check out the App Now](https://goalkr-94864ed83738.herokuapp.com)
 
 
 
@@ -14,7 +14,6 @@ Do you dream of achieving personal [BHAG goals](https://asana.com/resources/bhag
 
 This project was created to help individuals adopt the same precision and focus as Fortune 100 companies. Set challenging objectives with measurable key results. Align these with a long-term strategy to create your personal roadmap to success. Bring the power of OKRs to your life, and empower your future.
 
-**🎯 Hit your mark. Achieve success!**
 
 ###### What's an OKR?
 Short for [objectives and key results](https://www.forbes.com/advisor/business/what-is-an-okr-definition-examples/), OKRs are a proven goal-setting tool that holds you accountable, tracks your progress, and helps you achieve milestones that might seem "just out of reach". 
@@ -26,7 +25,8 @@ Short for [objectives and key results](https://www.forbes.com/advisor/business/w
 
 OKRs are the secret weapon consulting firms deploy at large organizations. Do the same with your life.
 
-[Click Here to Check out the App](https://goalkr-94864ed83738.herokuapp.com)
+**🎯 Hit your mark. Achieve success!**
+[Click Here to Check out the App Now](https://goalkr-94864ed83738.herokuapp.com)
 
 ---
 ### **Tech Stack**
