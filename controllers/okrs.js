@@ -54,6 +54,7 @@ async function viewDetails(req, res) {
         const data = {
             _id: okr._id,
             QuarterYearChoice: okr.QuarterYearChoice,
+            objectiveSpot: okr.objectiveSpot,
             objective: okr.objective,
             eoqDate: okr.eoqDate,
             keyResultOne: okr.keyResultOne,
@@ -100,6 +101,7 @@ async function updateOkr(req, res) {
     try {
         const okr = await Okr.findById(req.params.id);
         okr.objective = req.body.objective;
+        okr.objectiveSpot = req.body.objectiveSpot;
         okr.eoqDate = req.body.eoqDate;
         okr.objectiveProgress = req.body.objectiveProgress;
         okr.keyResultOne = req.body.keyResultOne;

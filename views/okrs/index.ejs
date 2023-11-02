@@ -2,32 +2,61 @@
 
 <% if (okrs.length) { %>
 	<% okrs.forEach(function(i) { %>
-		<h1><%= i.QuarterYearChoice %></h1>
-		<h3><%= i.objectiveSpot %></h3>
-		<div>
-			Objective: <%= i.objective %><br/>
-			Date:<%= i.eoqDate.toLocaleDateString("en-US") %><br/>
-			Progress: 0%<br/>
-			<a href="okrs/<%= i._id %>">See Details</a>
+	<div class="note-index">
+		<h1 class="center-spacing"><%= i.QuarterYearChoice %></h1>
+		<div class="row-box container align-left purple-background large-text-size">
+			<h3 class="white-font">OKR</h3>
+			<h3 class="center-spacing white-font">Due Date</h3>
+			<h3 class="center-spacing white-font">Progress</h3>
 		</div>
-		<div>
-			KR1: <%= i.keyResultOne %><br/>
-			Due Date: <%= i.dueDateOne.toLocaleDateString("en-US") %><br/>
-			Progress: <%= i.keyResultOneProgress %>%<br/>
-			<a href="okrs/<%= i._id %>">See Details</a>
+		<div class="row-box container above-padding xlarge-text-size">
+			<div class="align-left above-padding">
+				<%= i.objectiveSpot %>: <%= i.objective %>
+			</div> 
+			<div class="center-spacing above-padding">
+				<%= i.eoqDate.toLocaleDateString("en-US") %>
+			</div>
+			<div class="center-spacing above-padding">
+				0%
+			</div>
 		</div>
-		<div>
-			KR2: <%= i.keyResultTwo %><br/>
-			Due Date: <%= i.dueDateTwo.toLocaleDateString("en-US") %><br/>
-			Progress: <%= i.keyResultTwoProgress %>%<br/>
-			<a href="okrs/<%= i._id %>">See Details</a>
+		<div class="row-box container above-padding xlarge-text-size">
+			<div class="align-left above-padding">
+				KR1: <%= i.keyResultOne %>
+			</div>
+			<div class="center-spacing above-padding">
+				<%= i.dueDateOne.toLocaleDateString("en-US") %>
+			</div>
+			<div class="center-spacing above-padding">
+				<%= i.keyResultOneProgress %>%
+			</div>
 		</div>
-		<div>
-			KR3: <%= i.keyResultThree %><br/>
-			Due Date: <%= i.dueDateThree.toLocaleDateString("en-US") %><br/>
-			Progress: <%= i.keyResultThreeProgress %>%<br/>
-			<a href="okrs/<%= i._id %>">See Details</a>
+		<div class="row-box container above-padding xlarge-text-size">
+			<div class="align-left above-padding">
+				KR2: <%= i.keyResultTwo %>
+			</div>
+			<div class="center-spacing above-padding">
+				<%= i.dueDateTwo.toLocaleDateString("en-US") %>
+			</div>
+			<div class="center-spacing above-padding">
+				<%= i.keyResultTwoProgress %>%
+			</div>
 		</div>
+		<div class="row-box container above-padding xlarge-text-size">
+			<div class="align-left above-padding">
+				KR3: <%= i.keyResultThree %>
+			</div>
+			<div class="center-spacing above-padding">
+				<%= i.dueDateThree.toLocaleDateString("en-US") %>
+			</div>
+			<div class="center-spacing above-padding">
+				<%= i.keyResultThreeProgress %>%
+			</div>
+		</div>	
+		<div class="center-spacing">
+			<a class="button-link margin-above" href="okrs/<%= i._id %>">See Details</a>
+		</div>
+	</div>
 	<% }) %>
 <% } else { %>
 <h5>You haven't set any OKRs yet.</h5>

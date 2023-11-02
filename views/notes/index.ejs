@@ -3,16 +3,16 @@
 <% if (notes.length) { %>
 	<% notes.forEach(function(n) { %>
 		<div class="note-index">
-			<div class="note-date note-text-size">
+			<div class="note-date large-text-size">
 				<%= n.logDate.toLocaleDateString("en-US") %>
 			</div>
 			<div class="note-text">	
-				<i class="note-text-size"><%= n.noteText %></i>
+				<i class="large-text-size"><%= n.noteText %></i>
 			</div>
 		</div>
 	<% }) %>
 <% } else { %>
-<h5>You haven't taken any notes yet.</h5>
+	<h5 class="xlarge-text-size center-spacing note-index">You haven't taken any notes yet.</h5>
 <% } %>
 
 <%- include('../partials/footer') %>

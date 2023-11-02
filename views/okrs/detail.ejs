@@ -1,26 +1,55 @@
 <%- include('../partials/header') %>
 
-<div><%= data.QuarterYearChoice %></div>
-<div id="hideDetailsPageInfo" style="display:block">
-	<div>
-		Objective: <%= data.objective %><br/>
-		Date:<%= data.eoqDate %><br/>
-		Progress: <span id="averageProgress">Calculating...</span><br/>
+<div class="note-index">
+	<h1 class="center-spacing"><%= data.QuarterYearChoice %></h1>
+	<div class="row-box container align-left purple-background large-text-size">
+		<h3 class="white-font">OKR</h3>
+		<h3 class="center-spacing white-font">Due Date</h3>
+		<h3 class="center-spacing white-font">Progress</h3>
 	</div>
-	<div>
-		KR1: <%= data.keyResultOne %><br/>
-		Due Date: <%= data.dueDateOne %><br/>
-		Progress: <%= data.keyResultOneProgress %>%<br/>
+	<div class="row-box container above-padding xlarge-text-size">
+		<div class="align-left above-padding">
+			<%= data.objectiveSpot %>: <%= data.objective %>
+		</div> 
+		<div class="center-spacing above-padding">
+			<%= data.eoqDate.toLocaleDateString("en-US") %>
+		</div>
+		<div class="center-spacing above-padding">
+			<span id="averageProgress">Calculating...</span>
+		</div>
 	</div>
-	<div>
-		KR2: <%= data.keyResultTwo %><br/>
-		Due Date: <%= data.dueDateTwo %><br/>
-		Progress: <%= data.keyResultTwoProgress %>%<br/>
+	<div class="row-box container above-padding xlarge-text-size">
+		<div class="align-left above-padding">
+			KR1: <%= data.keyResultOne %>
+		</div>
+		<div class="center-spacing above-padding">
+			<%= data.dueDateOne.toLocaleDateString("en-US") %>
+		</div>
+		<div class="center-spacing above-padding">
+			<%= data.keyResultOneProgress %>%
+		</div>
 	</div>
-	<div>
-		KR3: <%= data.keyResultThree %><br/>
-		Due Date: <%= data.dueDateThree %><br/>
-		Progress: <%= data.keyResultThreeProgress %>%<br/>
+	<div class="row-box container above-padding xlarge-text-size">
+		<div class="align-left above-padding">
+			KR2: <%= data.keyResultTwo %>
+		</div>
+		<div class="center-spacing above-padding">
+			<%= data.dueDateTwo.toLocaleDateString("en-US") %>
+		</div>
+		<div class="center-spacing above-padding">
+			<%= data.keyResultTwoProgress %>%
+		</div>
+	</div>
+	<div class="row-box container above-padding xlarge-text-size">
+		<div class="align-left above-padding">
+			KR3: <%= data.keyResultThree %>
+		</div>
+		<div class="center-spacing above-padding">
+			<%= data.dueDateThree.toLocaleDateString("en-US") %>
+		</div>
+		<div class="center-spacing above-padding">
+			<%= data.keyResultThreeProgress %>%
+		</div>
 	</div>
 </div>
 <form id="updateOkrForm" method="POST" action="/okrs/<%= data._id %>?_method=PUT" style="display:none">
@@ -58,12 +87,16 @@
 	</div>
     <input class="button-link" type="submit" value="Save Updates to OKR">
 </form>
-<div>
-	<a id="hideAddNoteButton" href="/notes/new/<%= data._id %>" class="button-link">Add a Note</a>
+<div class="detail-button-placement">
 	<form id="deleteForm" action="/okrs/<%= data._id %>?_method=DELETE" method="POST">
-        <input class="button-link" type="submit" value="Delete OKR">
+        <input class="delete-button-link" type="submit" value="Delete OKR">
     </form>
-	<input type="button" id="showUpdateForm" class="button-link" onclick="handleClick()" value="Update OKR" />
+	<div>
+		<input type="button" id="showUpdateForm" class="button-link" onclick="handleClick()" value="Update OKR" />
+	</div>
+	<div>
+		<a id="hideAddNoteButton" href="/notes/new/<%= data._id %>" class="button-link">Add a Note</a>
+	</div>
 </div>
 <div>
 	<% if (notes.length) { %>
@@ -78,7 +111,7 @@
 		<% }) %>
 	<% } %>
 </div>
-
+</div>
 <script>
 var keyResultOneProgress = <%= data.keyResultOneProgress %>;
 var keyResultTwoProgress = <%= data.keyResultTwoProgress %>;
