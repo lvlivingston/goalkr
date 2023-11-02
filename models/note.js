@@ -7,12 +7,7 @@ const noteSchema = new Schema({
       type: String,
       required: true
     },
-    // QuarterYearChoice: {
-    //   type: String,
-    //   enum: ['Q423', 'Q124', 'Q224', 'Q324', 'Q424'],
-    // },
     logDate: {
-      //may need to change type to date
       type: Date,
       default: Date(),
       min: Date(),

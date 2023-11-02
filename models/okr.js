@@ -17,7 +17,6 @@ const okrSchema = new Schema({
       required: true
     },
     eoqDate: {
-      //may need to change type to date
       type: Date,
       default: function() {
         return new Date();
@@ -35,7 +34,6 @@ const okrSchema = new Schema({
       required: true
     },
     dueDateOne: {
-      //may need to change type to date
       type: Date,
       default: function() {
         return new Date();
@@ -53,7 +51,6 @@ const okrSchema = new Schema({
       required: true
     },
     dueDateTwo: {
-      //may need to change type to date
       type: Date,
       default: function() {
         return new Date();
@@ -71,7 +68,6 @@ const okrSchema = new Schema({
       required: true
     },
     dueDateThree: {
-      //may need to change type to date
       type: Date,
       default: function() {
         return new Date();
