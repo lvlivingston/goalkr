@@ -124,7 +124,7 @@ A big thank you to Weston Bailey, Rondell Charles, April Gonzalez & Tom Kolsrud 
 - [ ] Ensure all date input fields visually default to either today or end of the quarter (depending on placement)
 - [ ] Ensure notes display in descending order
 - [ ] Add Carousel view to click to the next (i.e.[ okr1 ]  [ ok2 ]   [ okr3 ] )
-- [ ] Further improvement to CSS for premium user experience (i.e. Update OKR field best for desktop at the moment)
+- [ ] Further improvement to CSS for premium user experience (i.e. Update OKR field best for desktop at the moment) [See current Brand Kit here](https://drive.google.com/file/d/19tTQEDjrBbHsLMamNDuZ8b9RDz9uF8C_/view?usp=sharing)
 - [ ] Add infotext boxes next to input fields to support user
 - [ ] Include visual optimization for desktop and tablet
 - [ ] Add ability to swipe left / right on screen for Homepage & OKR view options
