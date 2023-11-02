@@ -1,4 +1,3 @@
-const User = require('../models/user');
 const Okr = require('../models/okr');
 const Note = require('../models/note');
 
@@ -15,7 +14,6 @@ module.exports = {
 
 async function indexOkr(req, res) {
     const okrs = await Okr.find({});
-    console.log(okrs)
     res.render('okrs/index', { title: 'All OKRs', okrs });
 }
 
@@ -76,12 +74,9 @@ async function viewDetails(req, res) {
 }
 
 async function deleteOkr(req, res, next) {
-    console.log(deleteOkr);
     try {
         const okrId = req.params.id;
-        console.log(okrId);
         const deletedOkr = await Okr.findByIdAndDelete(okrId);
-        console.log(deletedOkr);
         if (!deletedOkr) {
             return res.status(404).send('OKR not found');
         }
@@ -94,21 +89,16 @@ async function deleteOkr(req, res, next) {
 
 function showUpdate(req, res) {
     const okrId = req.params.id;
-    console.log(okrId);
     const okrToUpdate = Okr.findByIdAndDelete(okrId);
-    console.log(okrToUpdate);
     res.render('okrs/update', {title: 'Update your OKR', okrToUpdate});
 }
 
 async function updateOkr(req, res) {
-    console.log(req.body)
     for (let key in req.body) {
         if (req.body[key] === '') delete req.body[key];
     }
     try {
         const okr = await Okr.findById(req.params.id);
-        console.log(req.params);
-        console.log(okr)
         okr.objective = req.body.objective;
         okr.eoqDate = req.body.eoqDate;
         okr.objectiveProgress = req.body.objectiveProgress;
