@@ -46,20 +46,30 @@ This is a web application hosted on Heroku utilizing the Express framework for N
 | HTTP METHOD | URL | CRUD | Response | Notes |
 | -------------------- | ------------- | ---- | -------- | ----- |
 | `full index of items`  |   |   |   |   |
-| GET | `/okrs` | Read (index) | Array of OKRs `{ [ okr, okr ] }` | retrieves the index list of all OKRs |
-| GET | `/notes` | Read (index) | Array of Notes `{ [ note, note ] }` | retrieves the index list of all notes |
-| `individual items`  |   |   |   |   |
-| GET | `/okrs/:okrId` | Read (show) | OKR Details | shows a specific OKR's details |
+| GET | `/` | Read (index) | View Landing Page | retrieves the landing page view |
+| GET | `/home` | Read (home) | View Homepage | retrieves the home page view |
+| GET | `/whatareokrs` | Read (viewWhat) | View "What are OKRs" page | retrieves the page view that describes OKRs |
+| GET | `/bestpractices` | Read (viewBest) | View "Best Practices" page | retrieves the page view that provides best practices |
+| GET | `/okrs` | Read (indexOkr) | Array of OKRs `{ [ okr, okr ] }` | retrieves the index list of all OKRs |
+| GET | `/okrs/new` | Read (addNewOkrPage) | View "Add an OKR" page | retrieves the page view to add an OKR |
+| GET | `/okrs/:okrId` | Read (viewDetails) | View "OKR Details" page | retrieves the page view to see a specific OKR's details |
+| GET | `/okrs/:okrId/update` | Read (showUpdate) | View "OKR Update" page | retrieves the page view to update an OKR |
+| GET | `/notes` | Read (indexNote) | Array of Notes `{ [ note, note ] }` | retrieves the index list of all notes |
+| GET | `/okrs/new` | Read (addNewNotePage) | View "Add a Note" page | retrieves the page view to add a note |
+| GET | `/okrs/new/:okrId` | Read (addNewNotePage) | View "Add a Note" page for a specific OKR | retrieves the page view to add a note to a specific OKR |
 | `adding items to index`  |   |   |   |   |
-| GET  | `/oauth/google`  | Read (show) | oAuth Log-in  |  oAuth log-in to add a user with their Google credentials | 
-| GET  | `/oauth2callback`  | Read (show) | oAuth Failed Log-in |  existing user, but failed oAuth log-in |
-| POST | `/users` | Create | Add a User | add a user to database |
-| POST | `/okrs` | Create | Add an OKR | add an OKR to database |
-| POST | `/okrs/:okrId/notes` | Create | Add a Note | add a note to database |
+| GET  | `/oauth/google`  | Read (show) | oAuth Log-in  |  oAuth log-in to authenticate a user with their Google credentials | 
+| GET  | `/oauth2callback`  | Read (show) | oAuth Log-in |  oAuth callback to login (either success or fail) |
+| GET  | `/logout`  | Read (show) | oAuth Log-out |  logs a user out of the app |
+| POST | `/okrs` | Create (create) | Add an OKR | adds an OKR to the database |
+| POST | `/users` | Create | Add a User | adds a user to database |
+| POST | `/okrs/:okrId/notes` | Create | Add a Note | adds a note to database |
+| POST | `/notes` | Create (create) | Add a Note | adds a note to the database |
+| POST | `/notes/new/:okrId` | Create (create) | Add a Note to a specific OKR | adds a note to the database to a specific OKR |
 | `removing items from index`  |   |   |   |   |
-| DELETE | `/okrs/:okrId` | Destroy | Delete an OKR | remove an OKR from database |
+| DELETE | `/okrs/:okrId` | Delete (deleteOkr) | Delete an OKR | removes an OKR from the database |
 | `updating items in index`  |   |   |   |   |
-| PUT | `/okrs/:okrId` | Update | Update OKR | update a specific OKR's details |
+| PUT | `/okrs/:okrId` | Update (updateOkr) | Update an OKR | updates a specific OKR's details |
 
 
 ---
@@ -162,9 +172,6 @@ A big thank you to Weston Bailey, Rondell Charles, April Gonzalez, & Tom Kolsrud
 
 
 # Planning Materials & Original Pitch below
-
-**🎯 Hit your mark. Achieve success!**
-
 
 ---
 ### **Project Idea and Description**
