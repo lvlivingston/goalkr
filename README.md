@@ -86,7 +86,7 @@ This is a web application hosted on Heroku utilizing the Express framework for N
 ---
 ![Best Practice Page](./public/images/finalscreens/BestPracticePageFinal.png)
 ---
-###### All OKRs Page
+###### All OKRs Page Options
 ![OKR Page A](./public/images/finalscreens/OkrPageFinalA.png)
 ---
 ![OKR Page B](./public/images/finalscreens/OkrPageFinalB.png)
