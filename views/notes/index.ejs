@@ -1,10 +1,14 @@
 <%- include('../partials/header') %>
 
-<% if (notes.length ) { %>
+<% if (notes.length) { %>
 	<% notes.forEach(function(n) { %>
-		<div>
-			Date:<%= n.logDate %>
-			Note: <%= n.noteText %>
+		<div class="note-index">
+			<div class="note-date note-text-size">
+				<%= n.logDate %>
+			</div>
+			<div class="note-text">	
+				<i class="note-text-size"><%= n.noteText %></i>
+			</div>
 		</div>
 	<% }) %>
 <% } else { %>

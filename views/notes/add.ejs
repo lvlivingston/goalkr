@@ -1,12 +1,13 @@
 <%- include('../partials/header') %>
 
+<div class="note-index">
 <form id="new-note-form" action="/notes" method="POST">
-	<label>New Note:</label>
+	<label class="bold">New Note:</label>
 	<input type="text" name="noteText" placeholder="Write your note here">
-	<label>Log Date:</label>
-	<input class="red-font" type="date" name="logDate">
+	<label class="bold" id="note-log-date">Log Date:</label>
+	<input class="red-font" id="bottom-padding" type="date" name="logDate">
 	<input name="okrId" type="hidden" value=<%= okrId %>>
 	<input class="button-link" type="submit" value="Add Note">
 </form>
-
+</div>
 <%- include('../partials/footerDeep') %>

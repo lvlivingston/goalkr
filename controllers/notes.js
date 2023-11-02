@@ -36,6 +36,6 @@ async function create(req, res) {
     res.redirect('/notes');
   } catch (err) {
     console.log(err);
-    res.render('notes/index.ejs', { errorMsg: err.message });
+    res.render('notes/index.ejs', { title: 'Add a Note', errorMsg: err.message });
   }
 }
