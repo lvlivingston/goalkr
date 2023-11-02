@@ -28,7 +28,7 @@
 		<label>Objective:</label>
 		<input name="objective" class="update-form" type="text" value="<%= data.objective %>"><br/>
 		<label>Date:</label>
-		<input name="eoqDate" class="update-form" type="text" value="<%= data.eoqDate %>"><br/>
+		<input name="eoqDate" class="update-form" type="text" value="<%= data.eoqDate.toLocaleDateString("en-US") %>"><br/>
 		<label>Progress:</label>
 		<input name="objectiveProgress" class="update-form" type="text" value="0"><br/>
 	</div>
@@ -36,7 +36,7 @@
 		<label>KR1:</label>
 		<input name="keyResultOne" class="update-form" type="text" value="<%= data.keyResultOne %>"><br/>
 		<label>Due Date:</label>
-		<input name="dueDateOne" class="update-form" type="text" value="<%= data.dueDateOne %>"><br/>
+		<input name="dueDateOne" class="update-form" type="text" value="<%= data.dueDateOne.toLocaleDateString("en-US") %>"><br/>
 		<label>Progress:</label>
 		<input name="keyResultOneProgress" class="update-form" type="text" value="<%= data.keyResultOneProgress %>"><br/>
 	</div>
@@ -44,7 +44,7 @@
 		<label>KR2:</label>
 		<input name="keyResultTwo" class="update-form" type="text" value="<%= data.keyResultTwo %>"><br/>
 		<label>Due Date:</label>
-		<input name="dueDateTwo" class="update-form" type="text" value="<%= data.dueDateTwo %>"><br/>
+		<input name="dueDateTwo" class="update-form" type="text" value="<%= data.dueDateTwo.toLocaleDateString("en-US") %>"><br/>
 		<label>Progress:</label>
 		<input name="keyResultTwoProgress" class="update-form" type="text" value="<%= data.keyResultTwoProgress %>"><br/>
 	</div>
@@ -52,7 +52,7 @@
 		<label>KR3:</label>
 		<input name="keyResultThree" class="update-form" type="text" value="<%= data.keyResultThree %>"><br/>
 		<label>Due Date:</label>
-		<input name="dueDateThree" class="update-form" type="text" value="<%= data.dueDateThree %>"><br/>
+		<input name="dueDateThree" class="update-form" type="text" value="<%= data.dueDateThree.toLocaleDateString("en-US") %>"><br/>
 		<label>Progress:</label>
 		<input name="keyResultThreeProgress" class="update-form" type="text" value="<%= data.keyResultThreeProgress %>"><br/>
 	</div>
@@ -70,7 +70,7 @@
 		<% notes.forEach(function(n) { %>
 			<% const matchingNote = notes.find(note => note.okrId.toString() === data._id.toString()); %>
 			<% if (matchingNote) { %>
-				<p>Log Date: <%= matchingNote.logDate %></p>
+				<p>Log Date: <%= matchingNote.logDate.toLocaleDateString("en-US") %></p>
 				<p>Note Text: <%= matchingNote.noteText %></p>
 			<% } else { %>
 				<h5>You haven't taken any notes yet.</h5>

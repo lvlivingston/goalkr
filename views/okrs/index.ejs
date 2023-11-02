@@ -2,29 +2,29 @@
 
 <% if (okrs.length) { %>
 	<% okrs.forEach(function(i) { %>
-		<div><%= i.QuarterYearChoice %></div>
-		<div><%= i.objectiveSpot %></div>
+		<h1><%= i.QuarterYearChoice %></h1>
+		<h3><%= i.objectiveSpot %></h3>
 		<div>
 			Objective: <%= i.objective %><br/>
-			Date:<%= i.eoqDate %><br/>
+			Date:<%= i.eoqDate.toLocaleDateString("en-US") %><br/>
 			Progress: 0%<br/>
 			<a href="okrs/<%= i._id %>">See Details</a>
 		</div>
 		<div>
 			KR1: <%= i.keyResultOne %><br/>
-			Due Date: <%= i.dueDateOne %><br/>
+			Due Date: <%= i.dueDateOne.toLocaleDateString("en-US") %><br/>
 			Progress: <%= i.keyResultOneProgress %>%<br/>
 			<a href="okrs/<%= i._id %>">See Details</a>
 		</div>
 		<div>
 			KR2: <%= i.keyResultTwo %><br/>
-			Due Date: <%= i.dueDateTwo %><br/>
+			Due Date: <%= i.dueDateTwo.toLocaleDateString("en-US") %><br/>
 			Progress: <%= i.keyResultTwoProgress %>%<br/>
 			<a href="okrs/<%= i._id %>">See Details</a>
 		</div>
 		<div>
 			KR3: <%= i.keyResultThree %><br/>
-			Due Date: <%= i.dueDateThree %><br/>
+			Due Date: <%= i.dueDateThree.toLocaleDateString("en-US") %><br/>
 			Progress: <%= i.keyResultThreeProgress %>%<br/>
 			<a href="okrs/<%= i._id %>">See Details</a>
 		</div>
