@@ -33,6 +33,7 @@ async function viewBest(req, res) {
 }
 
 
+
 // async function index(req, res) {
 //   const okrs = await Okr.find({});
 //   res.render('okrs/new', { title: 'Add an Okr', okrs });

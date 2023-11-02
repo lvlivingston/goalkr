@@ -21,8 +21,8 @@ router.get('/:id', ensureLoggedIn, okrsCtrl.viewDetails);
 //GET /reviews/:id/update (going to the update page)
 router.get('/:id/update', ensureLoggedIn, okrsCtrl.showUpdate);
 
-// // PUT /okrs/:okrsId (update an OKR)
-// router.put('/:id', ensureLoggedIn, okrsCtrl.update);
+// PUT /okrs/:okrsId (update an OKR)
+router.put('/:id', ensureLoggedIn, okrsCtrl.updateOkr);
 	
 module.exports = router;
 

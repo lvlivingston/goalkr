@@ -1,34 +1,69 @@
 <%- include('../partials/header') %>
 
 <div><%= data.QuarterYearChoice %></div>
-<div>
-	Objective: <%= data.objective %><br/>
-	Date:<%= data.eoqDate %><br/>
-	Progress: 0%<br/>
+<div id="hideDetailsPageInfo" style="display:block">
+	<div>
+		Objective: <%= data.objective %><br/>
+		Date:<%= data.eoqDate %><br/>
+		Progress: <span id="averageProgress">Calculating...</span><br/>
+	</div>
+	<div>
+		KR1: <%= data.keyResultOne %><br/>
+		Due Date: <%= data.dueDateOne %><br/>
+		Progress: <%= data.keyResultOneProgress %>%<br/>
+	</div>
+	<div>
+		KR2: <%= data.keyResultTwo %><br/>
+		Due Date: <%= data.dueDateTwo %><br/>
+		Progress: <%= data.keyResultTwoProgress %>%<br/>
+	</div>
+	<div>
+		KR3: <%= data.keyResultThree %><br/>
+		Due Date: <%= data.dueDateThree %><br/>
+		Progress: <%= data.keyResultThreeProgress %>%<br/>
+	</div>
 </div>
+<form id="updateOkrForm" method="POST" action="/okrs/<%= data._id %>?_method=PUT" style="display:none">
+	<div>
+		<label>Objective:</label>
+		<input name="objective" class="update-form" type="text" value="<%= data.objective %>"><br/>
+		<label>Date:</label>
+		<input name="eoqDate" class="update-form" type="text" value="<%= data.eoqDate %>"><br/>
+		<label>Progress:</label>
+		<input name="objectiveProgress" class="update-form" type="text" value="0"><br/>
+	</div>
+	<div>
+		<label>KR1:</label>
+		<input name="keyResultOne" class="update-form" type="text" value="<%= data.keyResultOne %>"><br/>
+		<label>Due Date:</label>
+		<input name="dueDateOne" class="update-form" type="text" value="<%= data.dueDateOne %>"><br/>
+		<label>Progress:</label>
+		<input name="keyResultOneProgress" class="update-form" type="text" value="<%= data.keyResultOneProgress %>"><br/>
+	</div>
+	<div>
+		<label>KR2:</label>
+		<input name="keyResultTwo" class="update-form" type="text" value="<%= data.keyResultTwo %>"><br/>
+		<label>Due Date:</label>
+		<input name="dueDateTwo" class="update-form" type="text" value="<%= data.dueDateTwo %>"><br/>
+		<label>Progress:</label>
+		<input name="keyResultTwoProgress" class="update-form" type="text" value="<%= data.keyResultTwoProgress %>"><br/>
+	</div>
+	<div>
+		<label>KR3:</label>
+		<input name="keyResultThree" class="update-form" type="text" value="<%= data.keyResultThree %>"><br/>
+		<label>Due Date:</label>
+		<input name="dueDateThree" class="update-form" type="text" value="<%= data.dueDateThree %>"><br/>
+		<label>Progress:</label>
+		<input name="keyResultThreeProgress" class="update-form" type="text" value="<%= data.keyResultThreeProgress %>"><br/>
+	</div>
+    <input class="button-link" type="submit" value="Save Updates to OKR">
+</form>
 <div>
-	KR1: <%= data.keyResultOne %><br/>
-	Due Date: <%= data.dueDateOne %><br/>
-	Progress: <%= data.keyResultOneProgress %>%<br/>
-</div>
-<div>
-	KR2: <%= data.keyResultTwo %><br/>
-	Due Date: <%= data.dueDateTwo %><br/>
-	Progress: <%= data.keyResultTwoProgress %>%<br/>
-</div>
-<div>
-	KR3: <%= data.keyResultThree %><br/>
-	Due Date: <%= data.dueDateThree %><br/>
-	Progress: <%= data.keyResultThreeProgress %>%<br/>
-</div>
-<div>
-	<a href="/notes/new/<%= data._id %>" class="button-link">Add a Note</a>
-	<form id="delete-form" action="/okrs/<%= data._id %>?_method=DELETE" method="POST">
+	<a id="hideAddNoteButton" href="/notes/new/<%= data._id %>" class="button-link">Add a Note</a>
+	<form id="deleteForm" action="/okrs/<%= data._id %>?_method=DELETE" method="POST">
         <input class="button-link" type="submit" value="Delete OKR">
     </form>
-	<form id="update-form" action="/okrs/<%= data._id %>?_method=UPDATE" method="PUT">
-        <input class="button-link" type="submit" value="Update OKR">
-    </form>
+	<input type="button" id="showUpdateForm" class="button-link" onclick="handleClick()" value="Update OKR" />
 </div>
 <div>
 	<% if (notes.length) { %>
@@ -43,4 +78,36 @@
 		<% }) %>
 	<% } %>
 </div>
+
+<script>
+var keyResultOneProgress = <%= data.keyResultOneProgress %>;
+var keyResultTwoProgress = <%= data.keyResultTwoProgress %>;
+var keyResultThreeProgress = <%= data.keyResultThreeProgress %>;
+
+var averageProgress = (keyResultOneProgress + keyResultTwoProgress + keyResultThreeProgress) / 3;
+var averageProgressElement = document.getElementById("averageProgress");
+averageProgressElement.textContent = averageProgress.toFixed(0) + "%";
+
+function handleClick () {
+	const myForm = document.getElementById("updateOkrForm");
+	const hidePageInfo = document.getElementById("hideDetailsPageInfo");
+	const hideAddNoteButton = document.getElementById("hideAddNoteButton");
+	const deleteForm = document.getElementById("deleteForm");
+	const showUpdateForm = document.getElementById("showUpdateForm");
+	if (myForm.style.display !== "none") {
+		myForm.style.display = "none";
+		hidePageInfo.style.display = "block";
+		hideAddNoteButton.style.display = "block";
+		deleteForm.style.display = "block";
+		showUpdateForm.style.display = "block";
+	} else {
+		myForm.style.display = "block";
+		hidePageInfo.style.display = "none";
+		hideAddNoteButton.style.display = "none";
+		deleteForm.style.display = "none";
+		showUpdateForm.style.display = "none";
+	}
+}
+</script>
+
 <%- include('../partials/footerNote') %>
