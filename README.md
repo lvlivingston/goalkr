@@ -152,6 +152,7 @@ A big thank you to Weston Bailey, Rondell Charles, April Gonzalez & Tom Kolsrud 
 
 ### **Project Idea and Description**
 **🎯 Hit your mark. Achieve success!**
+
 Do you dream of achieving personal [BHAG goals](https://asana.com/resources/bhag-big-hairy-audacious-goal), but get overwhelmed thinking about how to get there?
 
 *You're not alone.* 
