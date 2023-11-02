@@ -57,12 +57,13 @@ This is a web application hosted on Heroku utilizing the Express framework for N
 | GET | `/notes` | Read (indexNote) | Array of Notes `{ [ note, note ] }` | retrieves the index list of all notes |
 | GET | `/okrs/new` | Read (addNewNotePage) | View "Add a Note" page | retrieves the page view to add a note |
 | GET | `/okrs/new/:okrId` | Read (addNewNotePage) | View "Add a Note" page for a specific OKR | retrieves the page view to add a note to a specific OKR |
-| `adding items to index`  |   |   |   |   |
+| `oAuth index`  |   |   |   |   |
 | GET  | `/oauth/google`  | Read (show) | oAuth Log-in  |  oAuth log-in to authenticate a user with their Google credentials | 
 | GET  | `/oauth2callback`  | Read (show) | oAuth Log-in |  oAuth callback to login (either success or fail) |
 | GET  | `/logout`  | Read (show) | oAuth Log-out |  logs a user out of the app |
-| POST | `/okrs` | Create (create) | Add an OKR | adds an OKR to the database |
 | POST | `/users` | Create | Add a User | adds a user to database |
+| `adding items to index`  |   |   |   |   |
+| POST | `/okrs` | Create (create) | Add an OKR | adds an OKR to the database |
 | POST | `/okrs/:okrId/notes` | Create | Add a Note | adds a note to database |
 | POST | `/notes` | Create (create) | Add a Note | adds a note to the database |
 | POST | `/notes/new/:okrId` | Create (create) | Add a Note to a specific OKR | adds a note to the database to a specific OKR |
