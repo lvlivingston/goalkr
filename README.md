@@ -1,4 +1,4 @@
-# ![Title Banner](.public/images/logos/titleBanner.png)
+# ![Title Banner](./public/images/logos/titleBanner.png)
 A web application created by Leah Livingston
 
 [Click Here to Check out the App Now](https://goalkr-94864ed83738.herokuapp.com)
