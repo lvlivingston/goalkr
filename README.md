@@ -115,14 +115,12 @@ This is a web application hosted on Heroku utilizing the Express framework for N
 ---
 ### **Credit**
 
-A big thank you to Weston Bailey, Rondell Charles, April Gonzalez, & Tom Kolsrud for your support.
+A big thank you to Weston Bailey, Rondell Charles, April Gonzalez & Tom Kolsrud for your support.
 
 ---
 ### **Next Steps**
 
 ###### Style
-- [X] Include CSS styling following a 'Brand Kit'
-- [X] Include a 'Brand Kit' for future development use
 - [ ] Ensure all date input fields visually default to either today or end of the quarter (depending on placement)
 - [ ] Ensure notes display in descending order
 - [ ] Add Carousel view to click to the next (i.e.[ okr1 ]  [ ok2 ]   [ okr3 ] )
