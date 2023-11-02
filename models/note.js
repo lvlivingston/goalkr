@@ -9,8 +9,7 @@ const noteSchema = new Schema({
     },
     logDate: {
       type: Date,
-      default: Date(),
-      min: Date(),
+      default: new Date(Date.now()),
     },
     okrId: {
       type: Schema.Types.ObjectId,

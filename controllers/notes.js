@@ -31,6 +31,9 @@ async function create(req, res) {
   }
   try {
     const note = await Note.create(req.body);
+    // console.log(note);
+    // const dateString = Note.logDate;
+    // const originalDate = new Date(dateString);
     note.save();
     res.status(200);
     res.redirect('/notes');

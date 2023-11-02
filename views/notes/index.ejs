@@ -4,7 +4,7 @@
 	<% notes.forEach(function(n) { %>
 		<div class="note-index">
 			<div class="note-date note-text-size">
-				<%= n.logDate %>
+				<%= n.logDate.toLocaleDateString("en-US") %>
 			</div>
 			<div class="note-text">	
 				<i class="note-text-size"><%= n.noteText %></i>
