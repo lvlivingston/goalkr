@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-<div class="note-index">
+<div class="note-index" id="hideDetailsPageInfo" style="display:block">
 	<h1 class="center-spacing"><%= data.QuarterYearChoice %></h1>
 	<div class="row-box container align-left purple-background large-text-size">
 		<h3 class="white-font">OKR</h3>
@@ -52,38 +52,33 @@
 		</div>
 	</div>
 </div>
-<form id="updateOkrForm" method="POST" action="/okrs/<%= data._id %>?_method=PUT" style="display:none">
-	<div>
-		<label>Objective:</label>
-		<input name="objective" class="update-form" type="text" value="<%= data.objective %>"><br/>
-		<label>Date:</label>
-		<input name="eoqDate" class="update-form" type="text" value="<%= data.eoqDate.toLocaleDateString("en-US") %>"><br/>
-		<label>Progress:</label>
-		<input name="objectiveProgress" class="update-form" type="text" value="0"><br/>
+
+<form class="note-index" id="updateOkrForm" method="POST" action="/okrs/<%= data._id %>?_method=PUT" style="display:none">
+	<h1 class="center-spacing"><%= data.QuarterYearChoice %></h1>
+	<div class="row-box container align-left purple-background large-text-size">
+		<h3 class="white-font">OKR</h3>
+		<h3 class="center-spacing white-font">Due Date</h3>
+		<h3 class="center-spacing white-font">Progress</h3>
 	</div>
-	<div>
-		<label>KR1:</label>
-		<input name="keyResultOne" class="update-form" type="text" value="<%= data.keyResultOne %>"><br/>
-		<label>Due Date:</label>
-		<input name="dueDateOne" class="update-form" type="text" value="<%= data.dueDateOne.toLocaleDateString("en-US") %>"><br/>
-		<label>Progress:</label>
-		<input name="keyResultOneProgress" class="update-form" type="text" value="<%= data.keyResultOneProgress %>"><br/>
+	<div class="row-box container above-padding large-text-size">
+			<input class="center-spacing above-padding update-form" name="objective" type="text" value="<%= data.objective %>">		
+			<input class="center-spacing above-padding update-form" name="eoqDate" type="text" value="<%= data.eoqDate.toLocaleDateString("en-US") %>">
+			<input class="center-spacing above-padding update-form" name="objectiveProgress" type="text" value="0">
 	</div>
-	<div>
-		<label>KR2:</label>
-		<input name="keyResultTwo" class="update-form" type="text" value="<%= data.keyResultTwo %>"><br/>
-		<label>Due Date:</label>
-		<input name="dueDateTwo" class="update-form" type="text" value="<%= data.dueDateTwo.toLocaleDateString("en-US") %>"><br/>
-		<label>Progress:</label>
-		<input name="keyResultTwoProgress" class="update-form" type="text" value="<%= data.keyResultTwoProgress %>"><br/>
+	<div class="row-box container above-padding large-text-size">
+			<input class="center-spacing above-padding update-form" name="keyResultOne" type="text" value="<%= data.keyResultOne %>">		
+			<input class="center-spacing above-padding update-form" name="dueDateOne" type="text" value="<%= data.dueDateOne.toLocaleDateString("en-US") %>">
+			<input class="center-spacing above-padding update-form" name="keyResultOneProgress" type="text" value="<%= data.keyResultOneProgress %>">
 	</div>
-	<div>
-		<label>KR3:</label>
-		<input name="keyResultThree" class="update-form" type="text" value="<%= data.keyResultThree %>"><br/>
-		<label>Due Date:</label>
-		<input name="dueDateThree" class="update-form" type="text" value="<%= data.dueDateThree.toLocaleDateString("en-US") %>"><br/>
-		<label>Progress:</label>
-		<input name="keyResultThreeProgress" class="update-form" type="text" value="<%= data.keyResultThreeProgress %>"><br/>
+	<div class="row-box container above-padding large-text-size">
+		<input class="center-spacing above-padding update-form" name="keyResultTwo" type="text" value="<%= data.keyResultTwo %>">		
+		<input class="center-spacing above-padding update-form" name="dueDateTwo" type="text" value="<%= data.dueDateTwo.toLocaleDateString("en-US") %>">
+		<input class="center-spacing above-padding update-form" name="keyResultTwoProgress" type="text" value="<%= data.keyResultTwoProgress %>">
+	</div>
+	<div class="row-box container above-padding large-text-size">
+		<input class="center-spacing above-padding update-form" name="keyResultThree" type="text" value="<%= data.keyResultThree %>">		
+		<input class="center-spacing above-padding update-form" name="dueDateThree" type="text" value="<%= data.dueDateThree.toLocaleDateString("en-US") %>">
+		<input class="center-spacing above-padding update-form" name="keyResultThreeProgress" type="text" value="<%= data.keyResultThreeProgress %>">
 	</div>
     <input class="button-link" type="submit" value="Save Updates to OKR">
 </form>

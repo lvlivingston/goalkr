@@ -68,6 +68,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin-left: auto;
 }
 
 nav > h1 {

@@ -101,7 +101,6 @@ async function updateOkr(req, res) {
     try {
         const okr = await Okr.findById(req.params.id);
         okr.objective = req.body.objective;
-        okr.objectiveSpot = req.body.objectiveSpot;
         okr.eoqDate = req.body.eoqDate;
         okr.objectiveProgress = req.body.objectiveProgress;
         okr.keyResultOne = req.body.keyResultOne;
