@@ -3,12 +3,11 @@
 <div class="note-index">
 <% if (okrs.length < 3) { %>
 	<form id="new-okr-form" action="/okrs" method="POST">
-		<div class="above-padding center-spacing purple-background white-font margin-above">
+		<div class="above-padding center-spacing purple-background white-font">
 			<div class="above-padding">
 				<label class="purple-background white-font">What quarter are you setting OKRs for?</label>
 			</div>
 			<select class="input-field-text" name="QuarterYearChoice">
-				<option value="Choose" selected>Make a choice</option>
 				<option value="Q4 2023">Q4 2023</option>
 				<option value="Q1 2024">Q1 2024</option>
 				<option value="Q2 2024">Q2 2024</option>
@@ -18,11 +17,11 @@
 		</div>
 		<div>
 			<div class="above-padding">
-				<div class="above-padding center-spacing xlarge-text-size margin-above">
+				<div class="above-padding center-spacing large-text-size margin-above">
 					<label>What is your BHAG Objective?</label>
 					<input class="input-field-text" type="text" name="objective" placeholder="Qualitative objective here">
 				</div>
-				<div class="center-spacing xlarge-text-size">
+				<div class="center-spacing large-text-size">
 					<label>Due Date:</label>
 					<input class="input-field-text" type="date" name="eoqDate">
 				</div>
@@ -30,27 +29,27 @@
 		</div>	
 		<div class="above-padding margin-above">
 			<div class="above-padding center-spacing">
-				<label class="input-field-text large-text-size">Key Result One:</label><br/>
+				<label class="input-field-text">Key Result One:</label><br/>
 				<input class="input-field-text" type="text" name="keyResultOne" placeholder="1st quantitative KR here">
 			</div>
 			<div class="above-padding center-spacing">
-				<label class="input-field-text large-text-size">What date will you be finished with Key Result One?:</label>
+				<label class="input-field-text">What date will you be finished with Key Result One?:</label>
 				<input class="input-field-text" type="date" name="dueDateOne">
 			</div>
 			<div class="above-padding center-spacing">
-				<label class="input-field-text large-text-size">Key Result Two:</label><br/>
+				<label class="input-field-text">Key Result Two:</label><br/>
 				<input class="input-field-text" type="text" name="keyResultTwo" placeholder="2nd quantitative KR here">
 			</div>
 			<div class="above-padding center-spacing">
-				<label class="input-field-text large-text-size">What date will you be finished with Key Result Two?:</label>
+				<label class="input-field-text">What date will you be finished with Key Result Two?:</label>
 				<input class="input-field-text" type="date" name="dueDateTwo">
 			</div>
 			<div class="above-padding center-spacing">
-				<label class="input-field-text large-text-size">Key Result Three:</label><br/>
+				<label class="input-field-text">Key Result Three:</label><br/>
 				<input class="input-field-text" type="text" name="keyResultThree" placeholder="3rd quantitative KR here">
 			</div>
 			<div class="above-padding center-spacing">
-				<label class="input-field-text large-text-size">What date will you be finished with Key Result Three?:</label>
+				<label class="input-field-text">What date will you be finished with Key Result Three?:</label>
 				<input class="input-field-text" type="date" name="dueDateThree">
 			</div>
 		</div>
@@ -58,7 +57,6 @@
 			<label class="purple-background white-font"></labelclass>Of your 3 objectives, which should this one be?</label>
 			<div>
 				<select class="input-field-text" name="objectiveSpot">
-					<option value="Choose" selected>Make a choice</option>
 					<option value="Objective One">Objective One</option>
 					<option value="Objective Two">Objective Two</option>
 					<option value="Objective Three">Objective Three</option>

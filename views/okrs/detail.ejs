@@ -2,25 +2,25 @@
 
 <div class="note-index" id="hideDetailsPageInfo" style="display:block">
 	<h1 class="center-spacing"><%= data.QuarterYearChoice %></h1>
-	<div class="row-box container align-left purple-background large-text-size">
+	<div class="row-box container align-left purple-background">
 		<h3 class="white-font">OKR</h3>
 		<h3 class="center-spacing white-font">Due Date</h3>
 		<h3 class="center-spacing white-font">Progress</h3>
 	</div>
 	<div class="row-box container above-padding">
-		<div class="align-left above-padding xlarge-text-size">
-			<%= data.objectiveSpot %>:<br/><%= data.objective %>
+		<div class="align-left above-padding large-text-size">
+			<span class="bold"><%= data.objectiveSpot %>:</span><br/><%= data.objective %>
 		</div> 
-		<div class="center-spacing above-padding xlarge-text-size">
+		<div class="center-spacing above-padding large-text-size">
 			<%= data.eoqDate.toLocaleDateString("en-US") %>
 		</div>
-		<div class="center-spacing above-padding xlarge-text-size">
+		<div class="center-spacing above-padding large-text-size">
 			<span id="averageProgress">Calculating...</span>
 		</div>
 	</div>
 	<div class="row-box container above-padding">
 		<div class="align-left above-padding large-text-size input-field-text">
-			Key Result One:<br/><%= data.keyResultOne %>
+			<span class="bold input-field-text">Key Result One:</span><br/><%= data.keyResultOne %>
 		</div>
 		<div class="center-spacing above-padding large-text-size input-field-text">
 			<%= data.dueDateOne.toLocaleDateString("en-US") %>
@@ -31,7 +31,7 @@
 	</div>
 	<div class="row-box container above-padding">
 		<div class="align-left above-padding large-text-size input-field-text">
-			Key Result Two:<br/><%= data.keyResultTwo %>
+			<span class="bold input-field-text">Key Result Two:</span><br/><%= data.keyResultTwo %>
 		</div>
 		<div class="center-spacing above-padding large-text-size input-field-text">
 			<%= data.dueDateTwo.toLocaleDateString("en-US") %>
@@ -42,7 +42,7 @@
 	</div>
 	<div class="row-box container above-padding">
 		<div class="align-left above-padding large-text-size input-field-text">
-			Key Result Three:<br/><%= data.keyResultThree %>
+			<span class="bold input-field-text">Key Result Three:</span><br/><%= data.keyResultThree %>
 		</div>
 		<div class="center-spacing above-padding large-text-size input-field-text">
 			<%= data.dueDateThree.toLocaleDateString("en-US") %>
@@ -55,15 +55,15 @@
 
 <form class="note-index" id="updateOkrForm" method="POST" action="/okrs/<%= data._id %>?_method=PUT" style="display:none">
 	<h1 class="center-spacing"><%= data.QuarterYearChoice %></h1>
-	<div class="row-box container align-left purple-background large-text-size">
+	<div class="row-box container align-left purple-background">
 		<h3 class="white-font">OKR</h3>
 		<h3 class="center-spacing white-font">Due Date</h3>
 		<h3 class="center-spacing white-font">Progress</h3>
 	</div>
 	<div class="row-box container above-padding">
-			<input class="center-spacing above-padding update-form xlarge-text-size" name="objective" type="text" value="<%= data.objective %>">		
-			<input class="center-spacing above-padding update-form xlarge-text-size" name="eoqDate" type="text" value="<%= data.eoqDate.toLocaleDateString("en-US") %>">
-			<input class="center-spacing above-padding update-form xlarge-text-size" name="objectiveProgress" type="text" value="0">
+			<input class="center-spacing above-padding update-form large-text-size" name="objective" type="text" value="<%= data.objective %>">		
+			<input class="center-spacing above-padding update-form large-text-size" name="eoqDate" type="text" value="<%= data.eoqDate.toLocaleDateString("en-US") %>">
+			<input class="center-spacing above-padding update-form large-text-size" name="objectiveProgress" type="text" value="0">
 	</div>
 	<div class="row-box container above-padding">
 			<input class="center-spacing above-padding update-form large-text-size input-field-text" name="keyResultOne" type="text" value="<%= data.keyResultOne %>">		
@@ -109,7 +109,7 @@
 					</div>	
 			</div>
 			<% } else { %>
-				<h5 class="xlarge-text-size center-spacing note-index">You haven't taken any notes for this OKR yet.</h5>
+				<h5 class="large-text-size center-spacing note-index">You haven't taken any notes for this OKR yet.</h5>
 			<% } %>
 		<% }) %>
 	<% } %>

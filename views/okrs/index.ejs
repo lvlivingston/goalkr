@@ -4,25 +4,25 @@
 	<% okrs.forEach(function(i) { %>
 	<div class="note-index">
 		<h1 class="center-spacing"><%= i.QuarterYearChoice %></h1>
-		<div class="row-box container align-left purple-background large-text-size">
+		<div class="row-box container align-left purple-background">
 			<h3 class="white-font">OKR</h3>
 			<h3 class="center-spacing white-font">Due Date</h3>
 			<h3 class="center-spacing white-font">Progress</h3>
 		</div>
-		<div class="row-box container above-padding xlarge-text-size">
+		<div class="row-box container above-padding large-text-size">
 			<div class="align-left above-padding">
-				<%= i.objectiveSpot %>:<br/><%= i.objective %>
+				<span class="bold"><%= i.objectiveSpot %>:</span><br/><%= i.objective %>
 			</div> 
 			<div class="center-spacing above-padding">
 				<%= i.eoqDate.toLocaleDateString("en-US") %>
 			</div>
 			<div class="center-spacing above-padding">
-				0%
+				<span id="averageProgress">Calculating...</span>
 			</div>
 		</div>
 		<div class="row-box container above-padding large-text-size">
 			<div class="align-left above-padding input-field-text">
-				Key Result One:<br/><%= i.keyResultOne %>
+				<span class="bold input-field-text">Key Result One:</span><br/><%= i.keyResultOne %>
 			</div>
 			<div class="center-spacing above-padding input-field-text">
 				<%= i.dueDateOne.toLocaleDateString("en-US") %>
@@ -33,7 +33,7 @@
 		</div>
 		<div class="row-box container above-padding large-text-size">
 			<div class="align-left above-padding input-field-text">
-				Key Result Two:<br/><%= i.keyResultTwo %>
+				<span class="bold input-field-text">Key Result Two:</span><br/><%= i.keyResultTwo %>
 			</div>
 			<div class="center-spacing above-padding input-field-text">
 				<%= i.dueDateTwo.toLocaleDateString("en-US") %>
@@ -44,7 +44,7 @@
 		</div>
 		<div class="row-box container above-padding large-text-size">
 			<div class="align-left above-padding input-field-text">
-				Key Result Three:<br/><%= i.keyResultThree %>
+				<span class="bold input-field-text">Key Result Three:</span><br/><%= i.keyResultThree %>
 			</div>
 			<div class="center-spacing above-padding input-field-text">
 				<%= i.dueDateThree.toLocaleDateString("en-US") %>
@@ -57,9 +57,19 @@
 			<a class="button-link margin-above" href="okrs/<%= i._id %>">See Details</a>
 		</div>
 	</div>
+	<script>
+		var keyResultOneProgress = <%= i.keyResultOneProgress %>;
+		var keyResultTwoProgress = <%= i.keyResultTwoProgress %>;
+		var keyResultThreeProgress = <%= i.keyResultThreeProgress %>;
+		
+		var averageProgress = (keyResultOneProgress + keyResultTwoProgress + keyResultThreeProgress) / 3;
+		var averageProgressElement = document.getElementById("averageProgress");
+		averageProgressElement.textContent = averageProgress.toFixed(0) + "%";
+	</script>
 	<% }) %>
 <% } else { %>
 	<h5 class="xlarge-text-size center-spacing note-index">You haven't set any OKRs yet.</h5>
 <% } %>
+
 
 <%- include('../partials/footer') %>
