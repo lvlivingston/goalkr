@@ -89,12 +89,14 @@ This is a web application hosted on Heroku utilizing the Express framework for N
 ###### All OKRs Page
 ![OKR Page A](./public/images/finalscreens/OkrPageFinalA.png)
 ---
-###### Add OKR Page Options
+![OKR Page B](./public/images/finalscreens/OkrPageFinalB.png)
+---
+###### Add an OKR Page Options
 ![Add OKR Page A](./public/images/finalscreens/AddOkrPageFinalA.png)
 ---
 ![Add OKR Page B](./public/images/finalscreens/AddOkrPageFinalB.png)
 ---
-###### OKR Detail Page Option
+###### OKR Detail Page
 ![OKR Detail Page](./public/images/finalscreens/OkrDetailPageFinal.png)
 ---
 ###### Update / Delete OKR Page
