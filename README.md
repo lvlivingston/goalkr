@@ -131,7 +131,6 @@ A big thank you to Weston Bailey, Rondell Charles, April Gonzalez & Tom Kolsrud 
 
 
 ###### Functionality
-- [X] Include ability to update existing OKRs and Notes in same screen (rather than being directed to a new screen)
 - [ ] Update Google Cloud from "mongoose movies" class to individual project called "goal-kr"
 - [ ] Limit OKR text fields to 140 characters
 - [ ] Refactor code for simplicity and efficiency
