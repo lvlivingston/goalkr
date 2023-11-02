@@ -1,4 +1,4 @@
-<%- include('../partials/header') %>
+<%- include('../partials/headerNote') %>
 
 <div class="note-index" id="hideDetailsPageInfo" style="display:block">
 	<h1 class="center-spacing"><%= data.QuarterYearChoice %></h1>
@@ -7,47 +7,47 @@
 		<h3 class="center-spacing white-font">Due Date</h3>
 		<h3 class="center-spacing white-font">Progress</h3>
 	</div>
-	<div class="row-box container above-padding xlarge-text-size">
-		<div class="align-left above-padding">
-			<%= data.objectiveSpot %>: <%= data.objective %>
+	<div class="row-box container above-padding">
+		<div class="align-left above-padding xlarge-text-size">
+			<%= data.objectiveSpot %>:<br/><%= data.objective %>
 		</div> 
-		<div class="center-spacing above-padding">
+		<div class="center-spacing above-padding xlarge-text-size">
 			<%= data.eoqDate.toLocaleDateString("en-US") %>
 		</div>
-		<div class="center-spacing above-padding">
+		<div class="center-spacing above-padding xlarge-text-size">
 			<span id="averageProgress">Calculating...</span>
 		</div>
 	</div>
-	<div class="row-box container above-padding xlarge-text-size">
-		<div class="align-left above-padding">
-			KR1: <%= data.keyResultOne %>
+	<div class="row-box container above-padding">
+		<div class="align-left above-padding large-text-size input-field-text">
+			Key Result One:<br/><%= data.keyResultOne %>
 		</div>
-		<div class="center-spacing above-padding">
+		<div class="center-spacing above-padding large-text-size input-field-text">
 			<%= data.dueDateOne.toLocaleDateString("en-US") %>
 		</div>
-		<div class="center-spacing above-padding">
+		<div class="center-spacing above-padding large-text-size input-field-text">
 			<%= data.keyResultOneProgress %>%
 		</div>
 	</div>
-	<div class="row-box container above-padding xlarge-text-size">
-		<div class="align-left above-padding">
-			KR2: <%= data.keyResultTwo %>
+	<div class="row-box container above-padding">
+		<div class="align-left above-padding large-text-size input-field-text">
+			Key Result Two:<br/><%= data.keyResultTwo %>
 		</div>
-		<div class="center-spacing above-padding">
+		<div class="center-spacing above-padding large-text-size input-field-text">
 			<%= data.dueDateTwo.toLocaleDateString("en-US") %>
 		</div>
-		<div class="center-spacing above-padding">
+		<div class="center-spacing above-padding large-text-size input-field-text">
 			<%= data.keyResultTwoProgress %>%
 		</div>
 	</div>
-	<div class="row-box container above-padding xlarge-text-size">
-		<div class="align-left above-padding">
-			KR3: <%= data.keyResultThree %>
+	<div class="row-box container above-padding">
+		<div class="align-left above-padding large-text-size input-field-text">
+			Key Result Three:<br/><%= data.keyResultThree %>
 		</div>
-		<div class="center-spacing above-padding">
+		<div class="center-spacing above-padding large-text-size input-field-text">
 			<%= data.dueDateThree.toLocaleDateString("en-US") %>
 		</div>
-		<div class="center-spacing above-padding">
+		<div class="center-spacing above-padding large-text-size input-field-text">
 			<%= data.keyResultThreeProgress %>%
 		</div>
 	</div>
@@ -60,27 +60,29 @@
 		<h3 class="center-spacing white-font">Due Date</h3>
 		<h3 class="center-spacing white-font">Progress</h3>
 	</div>
-	<div class="row-box container above-padding large-text-size">
-			<input class="center-spacing above-padding update-form" name="objective" type="text" value="<%= data.objective %>">		
-			<input class="center-spacing above-padding update-form" name="eoqDate" type="text" value="<%= data.eoqDate.toLocaleDateString("en-US") %>">
-			<input class="center-spacing above-padding update-form" name="objectiveProgress" type="text" value="0">
+	<div class="row-box container above-padding">
+			<input class="center-spacing above-padding update-form xlarge-text-size" name="objective" type="text" value="<%= data.objective %>">		
+			<input class="center-spacing above-padding update-form xlarge-text-size" name="eoqDate" type="text" value="<%= data.eoqDate.toLocaleDateString("en-US") %>">
+			<input class="center-spacing above-padding update-form xlarge-text-size" name="objectiveProgress" type="text" value="0">
 	</div>
-	<div class="row-box container above-padding large-text-size">
-			<input class="center-spacing above-padding update-form" name="keyResultOne" type="text" value="<%= data.keyResultOne %>">		
-			<input class="center-spacing above-padding update-form" name="dueDateOne" type="text" value="<%= data.dueDateOne.toLocaleDateString("en-US") %>">
-			<input class="center-spacing above-padding update-form" name="keyResultOneProgress" type="text" value="<%= data.keyResultOneProgress %>">
+	<div class="row-box container above-padding">
+			<input class="center-spacing above-padding update-form large-text-size input-field-text" name="keyResultOne" type="text" value="<%= data.keyResultOne %>">		
+			<input class="center-spacing above-padding update-form large-text-size input-field-text" name="dueDateOne" type="text" value="<%= data.dueDateOne.toLocaleDateString("en-US") %>">
+			<input class="center-spacing above-padding update-form large-text-size input-field-text" name="keyResultOneProgress" type="text" value="<%= data.keyResultOneProgress %>">
 	</div>
-	<div class="row-box container above-padding large-text-size">
-		<input class="center-spacing above-padding update-form" name="keyResultTwo" type="text" value="<%= data.keyResultTwo %>">		
-		<input class="center-spacing above-padding update-form" name="dueDateTwo" type="text" value="<%= data.dueDateTwo.toLocaleDateString("en-US") %>">
-		<input class="center-spacing above-padding update-form" name="keyResultTwoProgress" type="text" value="<%= data.keyResultTwoProgress %>">
+	<div class="row-box container above-padding">
+		<input class="center-spacing above-padding update-form large-text-size input-field-text" name="keyResultTwo" type="text" value="<%= data.keyResultTwo %>">		
+		<input class="center-spacing above-padding update-form large-text-size input-field-text" name="dueDateTwo" type="text" value="<%= data.dueDateTwo.toLocaleDateString("en-US") %>">
+		<input class="center-spacing above-padding update-form large-text-size input-field-text" name="keyResultTwoProgress" type="text" value="<%= data.keyResultTwoProgress %>">
 	</div>
-	<div class="row-box container above-padding large-text-size">
-		<input class="center-spacing above-padding update-form" name="keyResultThree" type="text" value="<%= data.keyResultThree %>">		
-		<input class="center-spacing above-padding update-form" name="dueDateThree" type="text" value="<%= data.dueDateThree.toLocaleDateString("en-US") %>">
-		<input class="center-spacing above-padding update-form" name="keyResultThreeProgress" type="text" value="<%= data.keyResultThreeProgress %>">
+	<div class="row-box container above-padding">
+		<input class="center-spacing above-padding update-form large-text-size input-field-text" name="keyResultThree" type="text" value="<%= data.keyResultThree %>">		
+		<input class="center-spacing above-padding update-form large-text-size input-field-text" name="dueDateThree" type="text" value="<%= data.dueDateThree.toLocaleDateString("en-US") %>">
+		<input class="center-spacing above-padding update-form large-text-size input-field-text" name="keyResultThreeProgress" type="text" value="<%= data.keyResultThreeProgress %>">
 	</div>
-    <input class="button-link" type="submit" value="Save Updates to OKR">
+	<div class="center-spacing">
+		<input class="button-link margin-above" type="submit" value="Save Updates to OKR">
+	</div>
 </form>
 <div class="detail-button-placement">
 	<form id="deleteForm" action="/okrs/<%= data._id %>?_method=DELETE" method="POST">
@@ -96,12 +98,18 @@
 <div>
 	<% if (notes.length) { %>
 		<% notes.forEach(function(n) { %>
-			<% const matchingNote = notes.find(note => note.okrId.toString() === data._id.toString()); %>
-			<% if (matchingNote) { %>
-				<p>Log Date: <%= matchingNote.logDate.toLocaleDateString("en-US") %></p>
-				<p>Note Text: <%= matchingNote.noteText %></p>
+			<div class="note-index">
+				<% const matchingNote = notes.find(note => note.okrId.toString() === data._id.toString()); %>
+				<% if (matchingNote) { %>
+					<div class="note-date large-text-size">
+						<p><%= matchingNote.logDate.toLocaleDateString("en-US") %></p>
+					</div>
+					<div>
+					<i class="large-text-size input-field-text"><%= matchingNote.noteText %></i>
+					</div>	
+			</div>
 			<% } else { %>
-				<h5>You haven't taken any notes yet.</h5>
+				<h5 class="xlarge-text-size center-spacing note-index">You haven't taken any notes for this OKR yet.</h5>
 			<% } %>
 		<% }) %>
 	<% } %>

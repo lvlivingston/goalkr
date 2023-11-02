@@ -11,7 +11,7 @@
 		</div>
 		<div class="row-box container above-padding xlarge-text-size">
 			<div class="align-left above-padding">
-				<%= i.objectiveSpot %>: <%= i.objective %>
+				<%= i.objectiveSpot %>:<br/><%= i.objective %>
 			</div> 
 			<div class="center-spacing above-padding">
 				<%= i.eoqDate.toLocaleDateString("en-US") %>
@@ -20,36 +20,36 @@
 				0%
 			</div>
 		</div>
-		<div class="row-box container above-padding xlarge-text-size">
-			<div class="align-left above-padding">
-				KR1: <%= i.keyResultOne %>
+		<div class="row-box container above-padding large-text-size">
+			<div class="align-left above-padding input-field-text">
+				Key Result One:<br/><%= i.keyResultOne %>
 			</div>
-			<div class="center-spacing above-padding">
+			<div class="center-spacing above-padding input-field-text">
 				<%= i.dueDateOne.toLocaleDateString("en-US") %>
 			</div>
-			<div class="center-spacing above-padding">
+			<div class="center-spacing above-padding input-field-text">
 				<%= i.keyResultOneProgress %>%
 			</div>
 		</div>
-		<div class="row-box container above-padding xlarge-text-size">
-			<div class="align-left above-padding">
-				KR2: <%= i.keyResultTwo %>
+		<div class="row-box container above-padding large-text-size">
+			<div class="align-left above-padding input-field-text">
+				Key Result Two:<br/><%= i.keyResultTwo %>
 			</div>
-			<div class="center-spacing above-padding">
+			<div class="center-spacing above-padding input-field-text">
 				<%= i.dueDateTwo.toLocaleDateString("en-US") %>
 			</div>
-			<div class="center-spacing above-padding">
+			<div class="center-spacing above-padding input-field-text">
 				<%= i.keyResultTwoProgress %>%
 			</div>
 		</div>
-		<div class="row-box container above-padding xlarge-text-size">
-			<div class="align-left above-padding">
-				KR3: <%= i.keyResultThree %>
+		<div class="row-box container above-padding large-text-size">
+			<div class="align-left above-padding input-field-text">
+				Key Result Three:<br/><%= i.keyResultThree %>
 			</div>
-			<div class="center-spacing above-padding">
+			<div class="center-spacing above-padding input-field-text">
 				<%= i.dueDateThree.toLocaleDateString("en-US") %>
 			</div>
-			<div class="center-spacing above-padding">
+			<div class="center-spacing above-padding input-field-text">
 				<%= i.keyResultThreeProgress %>%
 			</div>
 		</div>	
@@ -59,7 +59,7 @@
 	</div>
 	<% }) %>
 <% } else { %>
-<h5>You haven't set any OKRs yet.</h5>
+	<h5 class="xlarge-text-size center-spacing note-index">You haven't set any OKRs yet.</h5>
 <% } %>
 
 <%- include('../partials/footer') %>

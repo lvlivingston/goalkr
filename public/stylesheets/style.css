@@ -4,8 +4,8 @@
     color:#2a187d;
 }
 
-.red-font {
-  color: #7D2A18;
+.input-field-text {
+  color: #565359;
 }
 
 .purple-background {
@@ -251,7 +251,7 @@ main {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 24px;
   transition: background-color 0.3s ease;
 }
 
@@ -270,7 +270,7 @@ main {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 24px;
   transition: background-color 0.3s ease;
 }
 
