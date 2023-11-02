@@ -28,7 +28,7 @@ router.get('/oauth2callback', passport.authenticate(
   }
 ));
 
-// GET /home (See home page)
+// GET /home (See homepage)
 router.get('/home', ensureLoggedIn, indexRouter.home);
 
 // GET /home/whatareokrs (See "What are OKRs" page)
