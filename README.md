@@ -132,6 +132,7 @@ A big thank you to Weston Bailey, Rondell Charles, April Gonzalez & Tom Kolsrud 
 
 ###### Functionality
 - [ ] Update Google Cloud from "mongoose movies" class to individual project called "goal-kr"
+- [ ] Include ability for private view of individual OKRs and Notes (logged-in user can only see their own input)
 - [ ] Limit OKR text fields to 140 characters
 - [ ] Refactor code for simplicity and efficiency
 - [ ] Update dropdowns for "objectiveSpot" to remove previously chosen answers (i.e. You can't choose Objective One 2 times)
@@ -274,7 +275,6 @@ The minimum viable product (MVP) goal is a functional OKR tool with basic CSS st
 - [X] Include ability to log-out after logging-in
 - [X] Include ability to add / update / delete individual OKRs
 - [X] Include ability to add a Note
-- [X] Include ability for private view of individual OKRs and Notes (logged-in user can only see their own input)
 - [X] Include optimized functionality for mobile view  
 - [X] Include ability for percentage progress to be calculated automatically based off key result percentages
 
@@ -293,6 +293,7 @@ The minimum viable product (MVP) goal is a functional OKR tool with basic CSS st
 
 ###### Functionality
 - [X] Include ability to update existing OKRs and Notes in same screen (rather than being directed to a new screen)
+- [ ] Include ability for private view of individual OKRs and Notes (logged-in user can only see their own input)
 - [ ] Include ability to update / delete Notes 
 - [ ] Include optimization for desktop and tablet
 - [ ] Include ability to archive a quarter's OKRs into historical view (or listed below current OKRs)
