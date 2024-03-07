@@ -131,6 +131,7 @@ A big thank you to Weston Bailey, Rondell Charles, April Gonzalez & Tom Kolsrud 
 
 
 ###### Functionality
+- [ ] Change raw error messages to generic error codes such as 400, 404, and 500 for better security
 - [ ] Update Google Cloud from "mongoose movies" class to individual project called "goal-kr"
 - [ ] Include ability for private view of individual OKRs and Notes (logged-in user can only see their own input)
 - [ ] Limit OKR text fields to 140 characters
